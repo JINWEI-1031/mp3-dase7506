@@ -4,10 +4,12 @@
 
 本仓库只保存该方案的代码依赖、配置、报告、训练来源、推理审计、原始预测和完整评分。源码中的历史 step 文件名是最终控制器的依赖；不包含实验轮次输出、其他候选权重、数据集、基座权重、虚拟环境或凭据。
 
+当前最终提交为 `mp3-197-v2`：补齐课程强制报告内容；算法、模型、原始预测和197分评分均保持不变。
+
 ## 提交附件
 
-- [源码及完整附件 ZIP](https://github.com/JINWEI-1031/mp3-dase7506/releases/download/mp3-197-v1/mp3-197-source.zip)
-- [仅包含两个文件的适配器 ZIP](https://github.com/JINWEI-1031/mp3-dase7506/releases/download/mp3-197-v1/mp3-197-adapter.zip)
+- [源码及完整附件 ZIP](https://github.com/JINWEI-1031/mp3-dase7506/releases/download/mp3-197-v2/mp3-197-source.zip)
+- [仅包含两个文件的适配器 ZIP](https://github.com/JINWEI-1031/mp3-dase7506/releases/download/mp3-197-v2/mp3-197-adapter.zip)
 - [完整评分 JSON](outputs/test-score.json)，保留官方输出原文，不裁剪逐题结果。
 - [原始预测与工具轨迹](outputs/test.json)
 - [报告](report.pdf) · [复现命令](REPRODUCE.md)

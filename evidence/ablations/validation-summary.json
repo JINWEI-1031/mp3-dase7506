@@ -1,0 +1,91 @@
+{
+  "status": "COMPLETE_THREE_FULL_VAL120_OFFICIAL_SCORES",
+  "correct": {
+    "current196_C4_compilerfirst_B": 116,
+    "q025_v075_compilerfirst_B": 116,
+    "q075_v025_compilerfirst_B": 116
+  },
+  "candidate_vs_control": {
+    "q025_v075_compilerfirst_B": {
+      "correct": 116,
+      "F": [],
+      "R": [],
+      "net": 0,
+      "changed_final_SQL_ids": []
+    },
+    "q075_v025_compilerfirst_B": {
+      "correct": 116,
+      "F": [],
+      "R": [],
+      "net": 0,
+      "changed_final_SQL_ids": []
+    }
+  },
+  "paid_prediction": {
+    "current196_C4_compilerfirst_B": 385,
+    "q025_v075_compilerfirst_B": 384,
+    "q075_v025_compilerfirst_B": 384
+  },
+  "score_replay_paid_equivalents": {
+    "current196_C4_compilerfirst_B": 385,
+    "q025_v075_compilerfirst_B": 384,
+    "q075_v025_compilerfirst_B": 384
+  },
+  "private_case_SQL_queries": 1080,
+  "scorer_guards": {
+    "current196_C4_compilerfirst_B": {
+      "status": "COMPLETE",
+      "pid": 9580,
+      "exit_code": 0,
+      "stop_reason": null,
+      "seconds": 71.95299999997951,
+      "peak_RSS_bytes": 34754560,
+      "process_exited": true,
+      "Windows_Job_handle_closed": true
+    },
+    "q025_v075_compilerfirst_B": {
+      "status": "COMPLETE",
+      "pid": 24932,
+      "exit_code": 0,
+      "stop_reason": null,
+      "seconds": 65.65599999995902,
+      "peak_RSS_bytes": 37388288,
+      "process_exited": true,
+      "Windows_Job_handle_closed": true
+    },
+    "q075_v025_compilerfirst_B": {
+      "status": "COMPLETE",
+      "pid": 27096,
+      "exit_code": 0,
+      "stop_reason": null,
+      "seconds": 62.56200000003446,
+      "peak_RSS_bytes": 35377152,
+      "process_exited": true,
+      "Windows_Job_handle_closed": true
+    }
+  },
+  "technical_UNKNOWN": false,
+  "automatic_retry": false,
+  "all_own_resources_released": true,
+  "eligible_for_root_requested_static_test_backup_only": true,
+  "test_model_execution_approval": false,
+  "fixed_module_maps": [
+    {
+      "q_proj": 0.25,
+      "v_proj": 0.75
+    },
+    {
+      "q_proj": 0.75,
+      "v_proj": 0.25
+    }
+  ],
+  "new_coefficients_training_GPU_or_test_reads": 0,
+  "files": {
+    "ALL-PREDICTIONS-FIXED.json": "ecd8d3575fcd05be6ca8b12c45b6ee1c72c0833427f4e4a71e174781a453afc0",
+    "ALL-SCORES-FIXED.json": "fc8b3bba42a44c4fea5aa5dd115bc0693cfbdc5c864f1e5c556e2e150dac41bb",
+    "RESULTS.json": "8cf479591399a189fddcc8f77558d7160d90c7b1266066921a8f257b92892ad5",
+    "MECHANISM-EVIDENCE.json": "9e1877bbe4c568debd7a3394a72dfedc815adbc608b9373f4fae7613207bb834",
+    "SCORE-CPU-RESOURCE-RELEASED.json": "b43c277c9b172b9b40ce52e7591f3c3d8239bd68c1b7d3f06325f5374261eb04",
+    "EXECUTION_REPORT.md": "c4c7795bec08953c68f4b6009f1d4302d24fdc345b741e9784fee731ae15188a"
+  }
+}

@@ -1,0 +1,16 @@
+课程网站填表材料（尚未创建课程提交 issue）
+
+成绩：197 / 240 = 82.08333333333333%
+完整评分文件：outputs/test-score.json（请直接选择此本地文件，不要手工改写）
+源码ZIP：https://github.com/JINWEI-1031/mp3-dase7506/releases/download/mp3-197-v2/mp3-197-source.zip
+适配器ZIP：https://github.com/JINWEI-1031/mp3-dase7506/releases/download/mp3-197-v2/mp3-197-adapter.zip
+学号：由本人填写；会公开显示。
+
+在课程页面选择完整评分JSON，填学号和两个ZIP链接，确认规则和隐私条款，点击 Prepare score submission，再点击 Submit on GitHub 并实际创建 issue。只上传本仓库或只准备链接均不算提交。
+
+课程网站原始 validateMP3Score 已接受评分JSON；全部240题、每题3实例、197题正确，逐题统计与完整哈希已核验。
+报告已补齐两组权重组件受控消融、116/120验证结果、失败案例、上下文/记忆/检索和提示注入风险及防护说明。
+
+尚未完成的核验：独立Linux完整复现。C17完整原始控制台训练日志尚未在本地找到，已提供原配置、指标、训练器、数据manifest及权重构造记录。Windows打包入口已fresh推理，240题SQL和工具轨迹均逐字匹配原197结果。不要把Windows证据写成Linux复现。
+
+截止：2026-11-30 23:59（北京时间）；互评：2026-12-01至12-07 23:59。

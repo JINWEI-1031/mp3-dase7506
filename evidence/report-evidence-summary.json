@@ -1,0 +1,84 @@
+{
+  "controlled_replacements": [
+    {
+      "replacement": "C4",
+      "validation_correct": 116,
+      "validation_n": 120,
+      "test_correct": 196,
+      "test_n": 240,
+      "fixes_vs_final": 1,
+      "regressions_vs_final": 2,
+      "score_SHA256": "4d6581c34252bd2e515bc007270be8c351f10203410565851ea814dd498cc2f4"
+    },
+    {
+      "replacement": "q075_v025",
+      "validation_correct": 116,
+      "validation_n": 120,
+      "test_correct": 195,
+      "test_n": 240,
+      "fixes_vs_final": 0,
+      "regressions_vs_final": 2,
+      "score_SHA256": "45b535ab75bd95f4157c8f55f5429dedca77f71c66a8c35f44e0ddc68d91fd55"
+    }
+  ],
+  "final_validation": {
+    "correct": 116,
+    "n": 120,
+    "accuracy": 96.66666666666667
+  },
+  "failure_count": 43,
+  "failure_categories": {
+    "checked_public_PASS": 27,
+    "no_exact_final_check": 4,
+    "checked_without_public_PASS": 12
+  },
+  "failure_examples": [
+    {
+      "id": "test-167f97f7d5a2eda6",
+      "category": "checked_public_PASS",
+      "final_SQL": "SELECT Professionals.first_name, Professionals.last_name\nFROM Professionals\nJOIN Treatments ON Professionals.professional_id = Treatments.professional_id\nWHERE Treatments.cost_of_treatment < (\n    SELECT AVG(Treatments.cost_of_treatment)\n    FROM Treatments\n)",
+      "paid_tools": 4,
+      "grading_case_passed": [
+        true,
+        false,
+        true
+      ]
+    },
+    {
+      "id": "test-dbd0a614cad98b46",
+      "category": "no_exact_final_check",
+      "final_SQL": "SELECT T2.Model FROM car_names AS T1 JOIN car_makers AS T2 ON T1.Make  =  T2.Maker WHERE T1.Weight  >  3500 AND T2.Maker  !=  1",
+      "paid_tools": 8,
+      "grading_case_passed": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "test-b3584cf86bfa038d",
+      "category": "checked_without_public_PASS",
+      "final_SQL": "SELECT property_name\nFROM Properties\nWHERE property_type_code IN ('house', 'apartment')\n  AND room_count > 1;",
+      "paid_tools": 8,
+      "grading_case_passed": [
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "paid_total": 812,
+  "measured_CPU": {
+    "original_native_generation_CPU_seconds": 608.796875,
+    "base_adapter_load_CPU_seconds": 10.25,
+    "note": "Native generation and load CPU counters only; excludes late generation, controller, tools and scorer. Not total process CPU."
+  },
+  "website_validation": {
+    "websiteScoreAccepted": true,
+    "sourceURLAccepted": true,
+    "adapterURLAccepted": true,
+    "correct": 197,
+    "n": 240,
+    "accuracy": 82.08333333333333
+  }
+}

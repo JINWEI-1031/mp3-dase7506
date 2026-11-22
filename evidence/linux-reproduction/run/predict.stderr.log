@@ -1,0 +1,74 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/union_late_agent.py", line 29, in act
+    try:text=self.runtime.late(prepared,do_sample=False,max_new_tokens=512)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/runtime.py", line 68, in late
+    tok,model,info=self.loader()
+                   ^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/runtime.py", line 22, in observed_loader
+    try:return runtime.observe_bundle(original_loader())
+                                      ^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/parent_export/step63_agent.py", line 48, in active_model
+    tokenizer, model, info = load_model()
+                             ^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/parent_export/step5_model.py", line 31, in load_model
+    raise ValueError("MP3_BASE_MODEL must name the pinned safetensors snapshot")
+ValueError: MP3_BASE_MODEL must name the pinned safetensors snapshot
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/runtime.py", line 79, in act
+    try:return self.agent.act(obs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/compiler_agent.py", line 58, in act
+    try:return legacy.act(obs)
+               ^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/union_late_agent.py", line 33, in act
+    self.audit.append({'stage':'UNKNOWN_TECHNICAL_STOP','phase':'provider','error':repr(e),'actual_completions':self.state.completions});raise RuntimeIntegrityError('late provider or integrity failure') from e
+                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+runtime.RuntimeIntegrityError: late provider or integrity failure
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/linux197-run.py", line 41, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/linux197-run.py", line 14, in main
+    runpy.run_module('mp3_sql.'+('predict' if mode=='predict' else 'score'),run_name='__main__');return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 229, in run_module
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/autodl-tmp/mp3-gpu-lab-20261120/MP3_SQL_student_package/mp3_sql/predict.py", line 48, in <module>
+    main()
+  File "/root/autodl-tmp/mp3-gpu-lab-20261120/MP3_SQL_student_package/mp3_sql/predict.py", line 38, in main
+    predictions = list(pool.map(run, rows))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/root/miniconda3/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-gpu-lab-20261120/MP3_SQL_student_package/mp3_sql/predict.py", line 36, in run
+    return rollout(row, tools, factory(args.checkpoint))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-gpu-lab-20261120/MP3_SQL_student_package/mp3_sql/environment.py", line 136, in rollout
+    episode.step(agent.act(episode.observation()))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/submission.py", line 48, in act
+    return self.agent.act(observation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/mp3-final197-linux-20261122/source/outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/runtime.py", line 82, in act
+    if self.state.failure is not None:raise RuntimeIntegrityError('sticky actual model failure: '+self.state.failure)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+runtime.RuntimeIntegrityError: sticky actual model failure: ValueError('MP3_BASE_MODEL must name the pinned safetensors snapshot')

@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "seconds": 167.96312882006168,
+  "process_tree_CPU_seconds": 475.98545399999995,
+  "peak_process_tree_RSS_bytes": 4577517568,
+  "reason": null,
+  "all_cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

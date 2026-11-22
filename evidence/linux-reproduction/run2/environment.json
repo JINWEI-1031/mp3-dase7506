@@ -1,0 +1,21 @@
+{
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "packages": {
+    "torch": "2.12.1+cpu",
+    "transformers": "4.57.6",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "safetensors": "0.7.0",
+    "sqlglot": "27.29.0",
+    "psutil": "7.0.0"
+  },
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "memory_limits": "16GiB RLIMIT_AS per process plus sum-RSS watchdog; cgroup is read-only",
+  "gpu_used": false
+}

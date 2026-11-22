@@ -1,0 +1,11 @@
+{
+  "same_final_SQL": 240,
+  "different_trace_episodes": [
+    {
+      "id": "test-12c8f8aac106abc6",
+      "same_SQL": true,
+      "old_paid": 3,
+      "new_paid": 3
+    }
+  ]
+}

@@ -2,12 +2,14 @@
 
 The recorded 197 result was obtained with the frozen controller on Windows CPU.
 The decision modules below are unchanged; `submission.py` is a new portable entry.
-Windows cold reproduction of this entry exactly matched all 240 original SQL queries and tool traces. Linux cold reproduction remains to be measured.
+Windows cold reproduction of this entry exactly matched all 240 original SQL queries and tool traces. Linux cold reproduction completed at 197/240: all 240 final SQL strings match; one intermediate floating-point result differs by about 3e-14. See evidence/linux-reproduction/.
 Do not describe the packaging static checks as a fresh 197 prediction.
 
 Install Python 3.11 and requirements.txt. Use the unchanged course starter package externally.
+Install the CPU wheel first: `python -m pip install torch==2.12.1 --index-url https://download.pytorch.org/whl/cpu`, then install requirements.txt.
+
 Provision Qwen/Qwen3-0.6B revision c1899de289a04d12100db370d81485cdf75e47ca before going offline.
-Retain the revision as the base snapshot directory name. Unzip mp3-197-adapter.zip separately.
+Retain the revision as the real base snapshot directory name after Path.resolve(); if an existing directory symlink resolves to a folder named model, create a real revision-named directory with file symlinks to the unchanged original files. Unzip mp3-197-adapter.zip separately.
 
 From the extracted source directory, with four CPUs and a 16 GiB process-tree memory limit enforced externally:
 

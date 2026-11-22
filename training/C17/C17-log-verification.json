@@ -1,0 +1,59 @@
+{
+  "raw_log_sha256": "09f4cc6c51610491958626aab6d15914cb916a52bdd8f2ee0fe70f93eed121e4",
+  "raw_log_bytes": 418021,
+  "training_summaries": [
+    {
+      "train_runtime": 7.5512,
+      "train_samples_per_second": 3.178,
+      "train_steps_per_second": 0.397,
+      "train_loss": 2.087641874949137,
+      "epoch": 0.01
+    },
+    {
+      "train_runtime": 8.1122,
+      "train_samples_per_second": 2.959,
+      "train_steps_per_second": 0.37,
+      "train_loss": 2.0868398745854697,
+      "epoch": 0.01
+    },
+    {
+      "train_runtime": 8.4856,
+      "train_samples_per_second": 2.828,
+      "train_steps_per_second": 0.354,
+      "train_loss": 2.0542362531026206,
+      "epoch": 0.01
+    },
+    {
+      "train_runtime": 1210.1723,
+      "train_samples_per_second": 3.292,
+      "train_steps_per_second": 0.412,
+      "train_loss": 0.19167620324469864,
+      "epoch": 1.0
+    },
+    {
+      "train_runtime": 1245.0293,
+      "train_samples_per_second": 3.2,
+      "train_steps_per_second": 0.4,
+      "train_loss": 0.19827881616405663,
+      "epoch": 1.0
+    },
+    {
+      "train_runtime": 1165.22,
+      "train_samples_per_second": 3.419,
+      "train_steps_per_second": 0.427,
+      "train_loss": 0.19962427355181922,
+      "epoch": 1.0
+    }
+  ],
+  "C17_metrics_exact_match": [
+    {
+      "train_runtime": 1210.1723,
+      "train_samples_per_second": 3.292,
+      "train_steps_per_second": 0.412,
+      "train_loss": 0.19167620324469864,
+      "epoch": 1.0
+    }
+  ],
+  "contains_step498": true,
+  "note": "Aggregate manager log has no per-group labels; C17 segment is identified by exact train_runtime and train_loss agreement with the retained original C17 metrics."
+}

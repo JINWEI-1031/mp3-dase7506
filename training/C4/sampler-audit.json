@@ -1,0 +1,18 @@
+{
+  "samplers": [
+    {
+      "class": "SeedableRandomSampler",
+      "seed": 61
+    }
+  ],
+  "epoch_input_index_order_sha256": {
+    "0": "1ddaa32ccf1601d5974acc6a00e234db7a79619d876a2b9898e64746e645ac22",
+    "1": "427acc572761a3060e3dc0b5779ce0f93bd74890726d0789603d2cbd8c73824c",
+    "2": "e85f214da9f5b92ebc0da4f33e9a874c31efb8d34be3e03196c58b7ecdf91a37"
+  },
+  "data_rows": 1324,
+  "expected_steps": 498,
+  "C3_same_sampler_arguments": true,
+  "expected_input_tokens": 3060177,
+  "expected_target_tokens": 128973
+}

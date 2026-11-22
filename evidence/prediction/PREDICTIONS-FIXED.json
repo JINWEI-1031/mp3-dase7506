@@ -1,0 +1,15 @@
+{
+  "n": 240,
+  "arm": "q025_v075_compilerfirst_B",
+  "model_completions": 19,
+  "single_arm_model_bundle_loads": 1,
+  "files": {
+    "outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/run/q025_v075_compilerfirst_B/all-model-generations.jsonl": "1fe63720bb0c72b1b9f5edcab3a6e110248bdd0b1b4127e3b5f6a292f7c201ba",
+    "outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/run/q025_v075_compilerfirst_B/episodes.jsonl": "5eee2da6ebb29b170e2a0523afe1edf7b334d29f25cf863b67151190825c2478",
+    "outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/run/q025_v075_compilerfirst_B/GUARD-ACCEPTED.json": "a2442971048fa03db4bcbca943b6d515c126d69a930b224206767cb69bb28ddb",
+    "outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/run/q025_v075_compilerfirst_B/original-model63.jsonl": "c27ea867a8ad26b25f3cbc3068e5f553f225351c163a9af3662980d995bbc13c",
+    "outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/run/q025_v075_compilerfirst_B/predictions.json": "9da23f16fb1d651cd1b9336ab5a799603e8dfee1eaa2bbbcf20a178fc0a1700a",
+    "outputs/coord198_gen_v2/round69_fixed_qv_test_v2_static/run/q025_v075_compilerfirst_B/progress.json": "4be376a0624647bab489bbd726566574750f1286568128bc4a555270a75b4e99"
+  },
+  "grading_references_or_case0_certificate_read": false
+}

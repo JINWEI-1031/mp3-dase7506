@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "fit_split": "development only",
+  "aliases": [
+    {
+      "context": "degree",
+      "source": "masters",
+      "target": "MA",
+      "support": 1
+    }
+  ],
+  "limitations": "A learned prior; its fitting examples are in-sample, and an unseen database may use different codes."
+}

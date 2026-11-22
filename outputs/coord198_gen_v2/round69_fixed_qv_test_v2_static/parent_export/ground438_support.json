@@ -1,0 +1,12 @@
+{
+  "out_of_fold_support": {
+    "0": 43,
+    "1": 51,
+    "2": 50
+  },
+  "all_support": 72,
+  "signatures": [
+    "explicit complete root population; single unused declared inner provenance FK; no related/quantifier/nested/aggregate scope"
+  ],
+  "answers_in_artifact": false
+}

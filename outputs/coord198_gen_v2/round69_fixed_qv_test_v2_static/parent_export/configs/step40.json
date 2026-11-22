@@ -1,0 +1,4 @@
+{
+  "baseline_config": "step25-exists.json",
+  "main": {"new_cap": 1, "inherited_cap": 24, "suffix_checks": 1, "schema_min_remaining": 2}
+}

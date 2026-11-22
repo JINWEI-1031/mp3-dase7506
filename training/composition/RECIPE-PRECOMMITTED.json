@@ -1,0 +1,65 @@
+{
+  "id": "FIXED_QV_MODULE_CROSS_R32_V1",
+  "root_preregistration": "outputs/coord198/conditional-fixed-qv-delta-cross-preregistration-20261122.json",
+  "root_preregistration_SHA256": "e44ad953f718276ddf1893d059540195bcb6543d5184b4e81a59981a12ca1440",
+  "sources": {
+    "C4": {
+      "directory": "outputs/gpu_lab_v1/adapters/C4",
+      "weights_SHA256": "33d79a1ec8bcc4fc612146abfd69936dac1a486cf5fb1b4d406bb882b5f67e18",
+      "config_SHA256": "41e0bae6345fab52653eab882a95937b3103cf7d104fbd2bf3f6a10ed2f69e07",
+      "parameters": 2293760
+    },
+    "C17": {
+      "directory": "outputs/coord198_learn_v2/round20_preserved_old/preserved/C17",
+      "weights_SHA256": "cd1e0ee53852679231e03dcf4fde4cda6887d31a7020ac5037acff6b31b4a9bf",
+      "config_SHA256": "73a4482f3df536482e260a4cd0eee86847e68ec31467b817a985ee983500453e",
+      "parameters": 2293760
+    }
+  },
+  "base_repository": "Qwen/Qwen3-0.6B",
+  "base_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "base_weights_SHA256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+  "output_rank": 32,
+  "output_alpha": 32,
+  "output_scaling": 1,
+  "outputs": [
+    {
+      "name": "q025_v075",
+      "module_C4_coefficients": {
+        "q_proj": 0.25,
+        "v_proj": 0.75
+      }
+    },
+    {
+      "name": "q075_v025",
+      "module_C4_coefficients": {
+        "q_proj": 0.75,
+        "v_proj": 0.25
+      }
+    }
+  ],
+  "scope": "Fixed by q_proj/v_proj only, constant across all28 layers and all tasks; no layer/task/database adaptation",
+  "A_rule": "cat([A4,A17],dim=0)",
+  "B_rule": "cat([2*lambda_module*B4,2*(1-lambda_module)*B17],dim=1)",
+  "source_only_original_C4_C17_AB": true,
+  "base_and_tokenizer_unchanged": true,
+  "storage": "float32; ordinary1.5 scaling rounding measured separately from block concatenation algebra",
+  "numeric_tolerance": {
+    "formula_reference_atol": 1e-08,
+    "formula_reference_rtol": 1e-06,
+    "stored_block_atol": 1e-10,
+    "stored_block_rtol": 1e-10
+  },
+  "adapter_parameters_each": 4587520,
+  "total_parameters_each": 600637440,
+  "source_compatibility_SHA256": "ac90dd40bc18b1fc1da62973d4888eaa9218bc572e68d794cba2d6fbde588b19",
+  "compose_source_SHA256": "ddc08178b7dfcc47238169dabb08ba801110bd9449b5a7111f93cfe32f118831",
+  "limits": {
+    "CPU": 1,
+    "priority": "IDLE",
+    "memory_GiB": 16,
+    "wall_seconds": 300,
+    "GPU": false
+  },
+  "full_LLM_predictions_training_paid_score_GPU_or_test_row_reads": 0
+}

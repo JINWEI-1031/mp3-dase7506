@@ -1,0 +1,8 @@
+{
+  "order": "hints_first",
+  "depth": 3,
+  "semantics": [
+    "distinct"
+  ],
+  "continue": false
+}

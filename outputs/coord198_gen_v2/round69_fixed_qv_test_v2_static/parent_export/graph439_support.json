@@ -1,0 +1,31 @@
+{
+  "fold_support": {
+    "0": {
+      "binary_state_literal": 2,
+      "scalar_global_count": 1,
+      "explicit_comparison_bound": 1
+    },
+    "1": {
+      "binary_state_literal": 1,
+      "scalar_global_count": 1,
+      "explicit_comparison_bound": 3
+    },
+    "2": {
+      "binary_state_literal": 1,
+      "scalar_global_count": 0,
+      "explicit_comparison_bound": 2
+    }
+  },
+  "all_support": {
+    "binary_state_literal": 2,
+    "scalar_global_count": 1,
+    "explicit_comparison_bound": 3
+  },
+  "signatures": [
+    "binary_state_literal",
+    "scalar_global_count",
+    "explicit_comparison_bound"
+  ],
+  "answers_or_db_routes_in_asset": false,
+  "field_slots": "types, state/polarity, scalar-count population, comparison-bound; no SQL retrieval"
+}

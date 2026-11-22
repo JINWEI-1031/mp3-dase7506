@@ -1,0 +1,7 @@
+torch==2.12.1
+transformers==4.57.6
+peft==0.17.1
+accelerate==1.10.1
+safetensors==0.7.0
+sqlglot==27.29.0
+psutil==7.0.0

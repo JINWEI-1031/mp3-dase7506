@@ -1,0 +1,42 @@
+{
+  "status": "TWO_FIXED_QV_MODULE_CROSS_SINGLE_R32_ADAPTERS_CREATED",
+  "outputs": [
+    {
+      "name": "q025_v075",
+      "module_C4_coefficients": {
+        "q_proj": 0.25,
+        "v_proj": 0.75
+      },
+      "directory": "outputs/coord198_gen_v2/round67_fixed_qv_delta_assets_static/q025_v075/adapter",
+      "weights_SHA256": "09e900d89768709e35e2060f8706eb42ed7d60c7f8a05515e26602801342256e",
+      "config_SHA256": "fc1aac31b4139b53d3f40af9c8172133dc1b4b514c6dd2c647e30731f377c3ad",
+      "adapter_parameters": 4587520,
+      "total_deployed_parameters": 600637440,
+      "rank": 32,
+      "alpha": 32,
+      "weight_file_bytes": 18365216,
+      "tensor_count": 112
+    },
+    {
+      "name": "q075_v025",
+      "module_C4_coefficients": {
+        "q_proj": 0.75,
+        "v_proj": 0.25
+      },
+      "directory": "outputs/coord198_gen_v2/round67_fixed_qv_delta_assets_static/q075_v025/adapter",
+      "weights_SHA256": "53a77080b1609d66e2c1c1c43e3326c5c04bf33722c066f9f424f4a5c9377a02",
+      "config_SHA256": "fc1aac31b4139b53d3f40af9c8172133dc1b4b514c6dd2c647e30731f377c3ad",
+      "adapter_parameters": 4587520,
+      "total_deployed_parameters": 600637440,
+      "rank": 32,
+      "alpha": 32,
+      "weight_file_bytes": 18365216,
+      "tensor_count": 112
+    }
+  ],
+  "recipe_SHA256": "076b9941029b4680ba32a83ada508e7bd29641a4858df553ab77986bcf206e2b",
+  "original_source_assets_unchanged": true,
+  "full_base_weights_or_LLM_loaded": false,
+  "new_predictions_training_GPU_score_or_test_rows": 0,
+  "seconds": 11.51500000001397
+}

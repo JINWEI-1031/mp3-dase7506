@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETE",
+  "pid": 13412,
+  "exit_code": 0,
+  "stop_reason": null,
+  "seconds": 396.15600000007544,
+  "peak_RSS_bytes": 5215473664,
+  "process_exited": true,
+  "Windows_Job_handle_closed": true
+}

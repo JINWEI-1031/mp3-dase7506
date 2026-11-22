@@ -1,0 +1,31 @@
+{
+  "independently_verified": true,
+  "arm": "q025_v075_compilerfirst_B",
+  "job_id": "FIXED_QV_CROSS_R32_R33_COMPILER_TWO_ARM_TEST240_SCORE_V2",
+  "job_SHA256": "876360619700fec9222c1582b7df74c399abeabfa95c16b73740d9b9f76e06b9",
+  "correct": 197,
+  "n": 240,
+  "versus_previous196": {
+    "fixes": 2,
+    "regressions": 1
+  },
+  "score_path": "D:\\work\\MP3\\outputs\\coord198_gen_v2\\round69_fixed_qv_test_v2_static\\score\\q025_v075_compilerfirst_B\\score.json",
+  "score_SHA256": "c1050c3448e25dae6b05e27376053552e9a8c3614d3b72aea9cb116b29093ba3",
+  "prediction_SHA256": "9da23f16fb1d651cd1b9336ab5a799603e8dfee1eaa2bbbcf20a178fc0a1700a",
+  "guard": {
+    "status": "COMPLETE",
+    "pid": 14528,
+    "exit_code": 0,
+    "stop_reason": null,
+    "seconds": 157.01600000006147,
+    "peak_RSS_bytes": 38477824,
+    "process_exited": true,
+    "Windows_Job_handle_closed": true
+  },
+  "one_base_one_AB_adapter": true,
+  "q_proj_C4_weight": 0.25,
+  "v_proj_C4_weight": 0.75,
+  "same_modules_across_all_tasks": true,
+  "Linux_independent_reproduction": "PENDING",
+  "stopping_goal_reached": false
+}

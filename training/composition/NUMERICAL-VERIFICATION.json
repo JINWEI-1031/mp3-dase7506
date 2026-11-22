@@ -1,0 +1,863 @@
+{
+  "all_passed": true,
+  "outputs": [
+    {
+      "name": "q025_v075",
+      "all_passed": true,
+      "probes": [
+        {
+          "module": "base_model.model.model.layers.0.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.6910027475502964e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.0.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.5152473650803522e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.1.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.1644302738987875e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.1.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.210185607448567e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.10.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.0283580712553437e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.10.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.9798461342590556e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.11.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.2036589358842562e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.11.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.92871107279613e-09,
+          "stored_block_max_abs_error": 3.469446951953614e-17
+        },
+        {
+          "module": "base_model.model.model.layers.12.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.8497739307242753e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.12.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.7579419695108733e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.13.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.3396814416432044e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.13.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.3446111718783413e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.14.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.5065657513072557e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.14.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.421058999113601e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.15.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.262772524381674e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.15.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.5281124629562548e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.16.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.1702676617635364e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.16.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.2084564177404786e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.17.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.3106381594483203e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.17.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.776692659995806e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.18.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.8945254184887794e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.18.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.7592743334175764e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.19.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.3807460858570337e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.19.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.136541426851074e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.2.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.8183003708548426e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.2.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.721752414252098e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.20.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.404217380735929e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.20.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.4161054754112676e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.21.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.6906738330445545e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.21.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.0141185814597238e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.22.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.8285940950611987e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.22.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.5298874523072e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.23.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.7478743516717863e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.23.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.9581520011312534e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.24.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.14307744067599e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.24.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.2341360908794137e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.25.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.4559251571586458e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.25.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.304386327589558e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.26.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.236129211825478e-09,
+          "stored_block_max_abs_error": 8.326672684688674e-17
+        },
+        {
+          "module": "base_model.model.model.layers.26.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.0659595556814523e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.27.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.36721109328586e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.27.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.024624044278834e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.3.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.1460195911982005e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.3.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.0050988439046513e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.4.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.273737758837213e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.4.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.7754964715409614e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.5.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.2295921706105837e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.5.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.108341910778133e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.6.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.6551493781390434e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.6.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.43474497507723e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.7.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.7755158662757786e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.7.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.8925539781167178e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.8.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.85113706255391e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.8.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.0286103075140005e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.9.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.3130301632368067e-09,
+          "stored_block_max_abs_error": 2.42861286636753e-17
+        },
+        {
+          "module": "base_model.model.model.layers.9.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.0120348373509067e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        }
+      ],
+      "PEFT_fixtures": [
+        {
+          "module_type": "q_proj",
+          "lambda_C4": 0.25,
+          "dimensions": [
+            17,
+            13
+          ],
+          "max_abs_error": 1.242657088340593e-10
+        },
+        {
+          "module_type": "v_proj",
+          "lambda_C4": 0.75,
+          "dimensions": [
+            17,
+            13
+          ],
+          "max_abs_error": 1.421702755521892e-10
+        }
+      ],
+      "A_source_bits_exact": true,
+      "B_float32_rounding_disclosed": true,
+      "save_reload_bit_exact": true,
+      "grad_enabled": false,
+      "coefficients_constant_all_layers": true
+    },
+    {
+      "name": "q075_v025",
+      "all_passed": true,
+      "probes": [
+        {
+          "module": "base_model.model.model.layers.0.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.55143281424866e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.0.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.4455380307625285e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.1.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.5599327992527057e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.1.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.060337830900316e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.10.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.2349050526893066e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.10.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.9328220933478857e-09,
+          "stored_block_max_abs_error": 2.42861286636753e-17
+        },
+        {
+          "module": "base_model.model.model.layers.11.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.402008328350469e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.11.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.426423659218635e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.12.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.48875594091591e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.12.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.2849544999148375e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.13.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.2038492419884648e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.13.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.794308312514815e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.14.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.811582033163118e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.14.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.8030630322130037e-09,
+          "stored_block_max_abs_error": 2.42861286636753e-17
+        },
+        {
+          "module": "base_model.model.model.layers.15.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.1886582303454194e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.15.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.6687719296692993e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.16.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.171610832130133e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.16.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.8499869899879506e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.17.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.583933012001438e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.17.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.144933015924e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.18.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.0502864267468723e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.18.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.6501631866505662e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.19.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.570444323877653e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.19.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.9230819402193955e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.2.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.7723823519943949e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.2.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.08457655304084e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.20.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.57792744096097e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.20.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.366956561306033e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.21.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.661969573589107e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.21.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.5613234747121766e-09,
+          "stored_block_max_abs_error": 1.3877787807814457e-17
+        },
+        {
+          "module": "base_model.model.model.layers.22.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.152145183760169e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.22.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.0665245967509414e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.23.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.0858200023020643e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.23.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.7251359358281277e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.24.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.839749279476278e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.24.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.1388088239658885e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.25.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 3.2946699977595695e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.25.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.841041846224357e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.26.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 4.0393760281087765e-09,
+          "stored_block_max_abs_error": 8.326672684688674e-17
+        },
+        {
+          "module": "base_model.model.model.layers.26.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 3.1982333309477085e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.27.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 4.367217101841625e-09,
+          "stored_block_max_abs_error": 5.551115123125783e-17
+        },
+        {
+          "module": "base_model.model.model.layers.27.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.963387799037598e-09,
+          "stored_block_max_abs_error": 3.469446951953614e-17
+        },
+        {
+          "module": "base_model.model.model.layers.3.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.6593618770710528e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.3.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.175033403384319e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.4.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.000966975446161e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.4.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.8436271658622827e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.5.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.9903695080980555e-09,
+          "stored_block_max_abs_error": 4.163336342344337e-17
+        },
+        {
+          "module": "base_model.model.model.layers.5.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.0883876919453037e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.6.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.94950361409596e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.6.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.921225595280518e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.7.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 1.5965279428348245e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.7.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.5495372271699956e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.8.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.3002857830328738e-09,
+          "stored_block_max_abs_error": 2.7755575615628914e-17
+        },
+        {
+          "module": "base_model.model.model.layers.8.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 1.8247439809160326e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.9.self_attn.q_proj",
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "formula_storage_max_abs_error": 2.1297673416520446e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        },
+        {
+          "module": "base_model.model.model.layers.9.self_attn.v_proj",
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "formula_storage_max_abs_error": 2.797125017717228e-09,
+          "stored_block_max_abs_error": 2.0816681711721685e-17
+        }
+      ],
+      "PEFT_fixtures": [
+        {
+          "module_type": "q_proj",
+          "lambda_C4": 0.75,
+          "dimensions": [
+            17,
+            13
+          ],
+          "max_abs_error": 1.9644597060164415e-10
+        },
+        {
+          "module_type": "v_proj",
+          "lambda_C4": 0.25,
+          "dimensions": [
+            17,
+            13
+          ],
+          "max_abs_error": 1.3003451093673846e-10
+        }
+      ],
+      "A_source_bits_exact": true,
+      "B_float32_rounding_disclosed": true,
+      "save_reload_bit_exact": true,
+      "grad_enabled": false,
+      "coefficients_constant_all_layers": true
+    }
+  ],
+  "actual_modules_each": 56,
+  "q_modules_each": 28,
+  "v_modules_each": 28,
+  "vectors_each_module": 5,
+  "tiny_PEFT_fixtures_each": 2,
+  "tolerance": {
+    "formula_reference_atol": 1e-08,
+    "formula_reference_rtol": 1e-06,
+    "stored_block_atol": 1e-10,
+    "stored_block_rtol": 1e-10
+  },
+  "full_base_LLM_predictions_gradients_GPU_SQL_score_or_test_rows": 0
+}

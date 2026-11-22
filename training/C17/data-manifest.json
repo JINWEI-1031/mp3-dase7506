@@ -1,0 +1,14 @@
+{
+  "id": "C17-C19-DATA-PREFLIGHT-ONLY-V1",
+  "files": {
+    "slot-preflight.jsonl": "1d997695b3ed04f067747934ea27406dbc867d264abfac21e9fa6d366d2c4ed6",
+    "actual-public-check-receipts.jsonl": "23b5445b331e20c85082c6a4ac10352ad66e7c12073393574849ca66d56e6815",
+    "progress.json": "7741c4929c641d3a6f7b02f584aeecdb4c8c215a58430165a3ef058d991e8073",
+    "report.json": "ed4c43af498463aade1887f4e7a67517baf03f6a24cdc89a181f57dc21090d0b",
+    "C17/train.jsonl": "fb718ff73c160d8226ed03364f01aa295805be2b5ae813162715a985f1bb8b79",
+    "C18/train.jsonl": "7141bd7543f9e96ace4920bae661932f8c260bf0516b090a1468a4e2024f4db6",
+    "C19/train.jsonl": "a3e62e3cd02740198923149aadbe6fc9f5e7ddb3e68f9794ffc92d8456cd1834"
+  },
+  "report_status": "DATA_PREFLIGHT_PASS",
+  "no_training_authorization": true
+}

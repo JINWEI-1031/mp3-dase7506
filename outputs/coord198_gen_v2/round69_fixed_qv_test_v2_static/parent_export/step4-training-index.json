@@ -1,0 +1,7906 @@
+{
+  "train_sha256": "562d6d54cbfac83829cf528a3b8ca5f101994c9fe5b1a502519beba328900f65",
+  "memory_sha256": "25dced1001defe1d96b87e67eb007a106a3b96ac57d0bd76988a0ee63ee563d2",
+  "manifest_sha256": "bf7a517249ebe31b9cad8cbf5d6598fde98316d89f9aa1172cae3ad83289a6bc",
+  "entries": [
+    {
+      "id": "train-adc8bb4c90469db1",
+      "db": "student_1",
+      "words": [
+        "are",
+        "first",
+        "grade",
+        "names",
+        "of",
+        "teach",
+        "teachers",
+        "the",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "are",
+        "first",
+        "grade",
+        "literal",
+        "names",
+        "of",
+        "teach",
+        "teachers",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-b596fbe01f7d29df",
+      "db": "shop_membership",
+      "words": [
+        "for",
+        "is",
+        "level",
+        "members",
+        "number",
+        "of",
+        "purchases",
+        "the",
+        "total",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "for",
+        "is",
+        "level",
+        "literal",
+        "members",
+        "number",
+        "of",
+        "purchases",
+        "the",
+        "total",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "where": 1,
+        "count": 1,
+        "table": 1,
+        "eq": 1,
+        "star": 1,
+        "column": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-18e61e0b51d41d9f",
+      "db": "theme_gallery",
+      "words": [
+        "a",
+        "attendance",
+        "below",
+        "exhibitions",
+        "have",
+        "how",
+        "many",
+        "more",
+        "or",
+        "price",
+        "than",
+        "ticket"
+      ],
+      "masked": [
+        "a",
+        "attendance",
+        "below",
+        "exhibitions",
+        "have",
+        "how",
+        "literal",
+        "many",
+        "more",
+        "or",
+        "price",
+        "than",
+        "ticket"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "where": 1,
+        "count": 1,
+        "table": 1,
+        "paren": 1,
+        "star": 1,
+        "or": 1,
+        "gt": 1,
+        "lt": 1,
+        "column": 2,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-a3f7406d5abebff2",
+      "db": "perpetrator",
+      "words": [
+        "are",
+        "china",
+        "country",
+        "is",
+        "names",
+        "not",
+        "of",
+        "perpetrators",
+        "the",
+        "what",
+        "whose"
+      ],
+      "masked": [
+        "are",
+        "country",
+        "is",
+        "literal",
+        "names",
+        "not",
+        "of",
+        "perpetrators",
+        "the",
+        "what",
+        "whose"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "neq": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-586a26b875816fb7",
+      "db": "csu_1",
+      "words": [
+        "conferred",
+        "degrees",
+        "in",
+        "most",
+        "the",
+        "was",
+        "what",
+        "year"
+      ],
+      "masked": [
+        "conferred",
+        "degrees",
+        "in",
+        "most",
+        "the",
+        "was",
+        "what",
+        "year"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "limit": 1,
+        "from": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "group_sum"
+      ]
+    },
+    {
+      "id": "train-594f7846a27cf8de",
+      "db": "browser_web",
+      "words": [
+        "accelerator",
+        "and",
+        "are",
+        "browser",
+        "compatible",
+        "named",
+        "names",
+        "not",
+        "opera",
+        "operating",
+        "show",
+        "supporting",
+        "systems",
+        "that",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "accelerator",
+        "and",
+        "are",
+        "browser",
+        "compatible",
+        "literal",
+        "named",
+        "names",
+        "not",
+        "operating",
+        "show",
+        "supporting",
+        "systems",
+        "that",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 1,
+        "is": 1,
+        "literal": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key",
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-743fdd71f2669e0f",
+      "db": "tracking_share_transactions",
+      "words": [
+        "description",
+        "frequently",
+        "most",
+        "occurs",
+        "of",
+        "show",
+        "that",
+        "the",
+        "transaction",
+        "type"
+      ],
+      "masked": [
+        "description",
+        "frequently",
+        "most",
+        "occurs",
+        "of",
+        "show",
+        "that",
+        "the",
+        "transaction",
+        "type"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "limit": 1,
+        "from": 1,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "add_join",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-58bcf7cb46f91a5c",
+      "db": "storm_record",
+      "words": [
+        "affected",
+        "don",
+        "have",
+        "in",
+        "name",
+        "of",
+        "record",
+        "region",
+        "show",
+        "storms",
+        "t",
+        "the",
+        "which"
+      ],
+      "masked": [
+        "affected",
+        "don",
+        "have",
+        "in",
+        "name",
+        "of",
+        "record",
+        "region",
+        "show",
+        "storms",
+        "t",
+        "the",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-8e30ecf7769c57ee",
+      "db": "customers_and_products_contacts",
+      "words": [
+        "and",
+        "card",
+        "credit",
+        "customers",
+        "have",
+        "method",
+        "more",
+        "names",
+        "of",
+        "orders",
+        "payment",
+        "show",
+        "than",
+        "the",
+        "use",
+        "who"
+      ],
+      "masked": [
+        "and",
+        "card",
+        "credit",
+        "customers",
+        "have",
+        "literal",
+        "method",
+        "more",
+        "names",
+        "of",
+        "orders",
+        "payment",
+        "show",
+        "than",
+        "the",
+        "use",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "and": 1,
+        "eq": 1,
+        "gt": 1,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-813608cd7eac6c1c",
+      "db": "music_2",
+      "words": [
+        "albums",
+        "all",
+        "are",
+        "group",
+        "in",
+        "label",
+        "music",
+        "songs",
+        "the",
+        "under",
+        "universal",
+        "what"
+      ],
+      "masked": [
+        "albums",
+        "all",
+        "are",
+        "in",
+        "label",
+        "literal",
+        "songs",
+        "the",
+        "under",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 57,
+        "from": 1,
+        "join": 28,
+        "table": 29,
+        "eq": 28
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-eb21c76293f3be8f",
+      "db": "city_record",
+      "words": [
+        "city",
+        "events",
+        "find",
+        "hosted",
+        "most",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "city",
+        "events",
+        "find",
+        "hosted",
+        "most",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "limit": 1,
+        "from": 1,
+        "join": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-35ad911efe8a7773",
+      "db": "pilot_record",
+      "words": [
+        "have",
+        "more",
+        "names",
+        "of",
+        "one",
+        "pilots",
+        "record",
+        "show",
+        "than",
+        "that"
+      ],
+      "masked": [
+        "have",
+        "more",
+        "names",
+        "of",
+        "one",
+        "pilots",
+        "record",
+        "show",
+        "than",
+        "that"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "having": 1,
+        "table": 2,
+        "eq": 1,
+        "gt": 1,
+        "count": 1,
+        "literal": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-fc28953ffd539fd4",
+      "db": "formula_1",
+      "words": [
+        "after",
+        "and",
+        "driver",
+        "id",
+        "in",
+        "is",
+        "last",
+        "most",
+        "name",
+        "of",
+        "participated",
+        "races",
+        "the",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "after",
+        "and",
+        "driver",
+        "id",
+        "in",
+        "is",
+        "last",
+        "literal",
+        "most",
+        "name",
+        "of",
+        "participated",
+        "races",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "order": 1,
+        "literal": 2,
+        "table": 3,
+        "eq": 2,
+        "gte": 1,
+        "ordered": 1,
+        "count": 1
+      },
+      "error": "misuse of aggregate",
+      "edits": [
+        "join_key",
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-3d237f22a9675815",
+      "db": "gas_company",
+      "words": [
+        "all",
+        "and",
+        "by",
+        "count",
+        "each",
+        "gas",
+        "in",
+        "location",
+        "locations",
+        "number",
+        "of",
+        "ordered",
+        "show",
+        "stations",
+        "the"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "by",
+        "count",
+        "each",
+        "gas",
+        "in",
+        "location",
+        "locations",
+        "number",
+        "of",
+        "ordered",
+        "show",
+        "stations",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-d050f2a3853feb77",
+      "db": "customers_card_transactions",
+      "words": [
+        "accounts",
+        "are",
+        "customers",
+        "full",
+        "have",
+        "names",
+        "of",
+        "the",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "accounts",
+        "are",
+        "customers",
+        "full",
+        "have",
+        "names",
+        "of",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "not": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-8e8f5f32bf4bf6dc",
+      "db": "aircraft",
+      "words": [
+        "aircrafts",
+        "and",
+        "it",
+        "list",
+        "matches",
+        "names",
+        "number",
+        "of",
+        "the",
+        "times",
+        "won"
+      ],
+      "masked": [
+        "aircrafts",
+        "and",
+        "it",
+        "list",
+        "matches",
+        "names",
+        "number",
+        "of",
+        "the",
+        "times",
+        "won"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-47ae6a9ba238fadf",
+      "db": "customers_campaigns_ecommerce",
+      "words": [
+        "an",
+        "and",
+        "customers",
+        "fedex",
+        "having",
+        "method",
+        "names",
+        "of",
+        "order",
+        "paid",
+        "shipping",
+        "show",
+        "status",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "an",
+        "and",
+        "customers",
+        "fedex",
+        "having",
+        "method",
+        "names",
+        "of",
+        "order",
+        "paid",
+        "shipping",
+        "show",
+        "status",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 4,
+        "and": 3,
+        "gte": 1,
+        "literal": 3,
+        "not": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-29fa54fd35a2358f",
+      "db": "game_injury",
+      "words": [
+        "an",
+        "and",
+        "any",
+        "did",
+        "foot",
+        "have",
+        "in",
+        "injury",
+        "knee",
+        "of",
+        "or",
+        "player",
+        "problem",
+        "season",
+        "stadium",
+        "which"
+      ],
+      "masked": [
+        "an",
+        "and",
+        "any",
+        "did",
+        "have",
+        "in",
+        "injury",
+        "literal",
+        "of",
+        "or",
+        "player",
+        "season",
+        "stadium",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "in": 1,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-c350382a9d291bea",
+      "db": "device",
+      "words": [
+        "a",
+        "are",
+        "carriers",
+        "devices",
+        "in",
+        "more",
+        "of",
+        "shop",
+        "single",
+        "stock",
+        "than",
+        "that",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "a",
+        "are",
+        "carriers",
+        "devices",
+        "in",
+        "more",
+        "of",
+        "shop",
+        "single",
+        "stock",
+        "than",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "and": 1,
+        "gt": 1,
+        "not": 1,
+        "literal": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-234846d0a52131c1",
+      "db": "cre_Doc_Control_Systems",
+      "words": [
+        "all",
+        "circulation",
+        "document",
+        "employee",
+        "employees",
+        "history",
+        "id",
+        "in",
+        "list",
+        "name",
+        "of",
+        "s",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "all",
+        "circulation",
+        "document",
+        "employee",
+        "employees",
+        "history",
+        "id",
+        "in",
+        "list",
+        "literal",
+        "name",
+        "of",
+        "s",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-c1a0353ebad08379",
+      "db": "local_govt_in_alabama",
+      "words": [
+        "are",
+        "code",
+        "details",
+        "event",
+        "have",
+        "marriage",
+        "of",
+        "services",
+        "that",
+        "the",
+        "type",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "code",
+        "details",
+        "event",
+        "have",
+        "literal",
+        "of",
+        "services",
+        "that",
+        "the",
+        "type",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-4ff72d4ea9363a0b",
+      "db": "insurance_policies",
+      "words": [
+        "also",
+        "and",
+        "claim",
+        "count",
+        "date",
+        "find",
+        "id",
+        "incurred",
+        "me",
+        "most",
+        "of",
+        "settlement",
+        "tell",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "also",
+        "and",
+        "claim",
+        "count",
+        "date",
+        "find",
+        "id",
+        "incurred",
+        "me",
+        "most",
+        "of",
+        "settlement",
+        "tell",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "limit": 1,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "literal": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-a68cce7600203868",
+      "db": "small_bank_1",
+      "words": [
+        "and",
+        "are",
+        "balances",
+        "by",
+        "checking",
+        "customers",
+        "descending",
+        "names",
+        "of",
+        "ordered",
+        "savings",
+        "the",
+        "total",
+        "what"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "balances",
+        "by",
+        "checking",
+        "customers",
+        "descending",
+        "names",
+        "of",
+        "ordered",
+        "savings",
+        "the",
+        "total",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 2,
+        "order": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1,
+        "add": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-069336f0e8c52eef",
+      "db": "scientist_1",
+      "words": [
+        "and",
+        "each",
+        "find",
+        "is",
+        "name",
+        "number",
+        "of",
+        "on",
+        "projects",
+        "s",
+        "scientist",
+        "the",
+        "which",
+        "working"
+      ],
+      "masked": [
+        "and",
+        "each",
+        "find",
+        "is",
+        "name",
+        "number",
+        "of",
+        "on",
+        "projects",
+        "s",
+        "scientist",
+        "the",
+        "which",
+        "working"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "count": 1,
+        "table": 3,
+        "eq": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-855a9ae761763180",
+      "db": "mountain_photos",
+      "words": [
+        "are",
+        "brand",
+        "lens",
+        "names",
+        "of",
+        "olympus",
+        "or",
+        "photos",
+        "sigma",
+        "taken",
+        "the",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "are",
+        "brand",
+        "lens",
+        "literal",
+        "names",
+        "of",
+        "or",
+        "photos",
+        "taken",
+        "the",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "in": 1,
+        "literal": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-3e422a58e233bf0a",
+      "db": "student_assessment",
+      "words": [
+        "course",
+        "has",
+        "most",
+        "number",
+        "of",
+        "registered",
+        "students",
+        "which"
+      ],
+      "masked": [
+        "course",
+        "has",
+        "most",
+        "number",
+        "of",
+        "registered",
+        "students",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-3c3cdc38fa78ed03",
+      "db": "movie_1",
+      "words": [
+        "find",
+        "given",
+        "had",
+        "higher",
+        "names",
+        "of",
+        "ratings",
+        "reviewers",
+        "star",
+        "than",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "find",
+        "given",
+        "had",
+        "higher",
+        "literal",
+        "names",
+        "of",
+        "ratings",
+        "reviewers",
+        "star",
+        "than",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-25a0b7cfb4c1ee95",
+      "db": "flight_company",
+      "words": [
+        "a",
+        "airport",
+        "are",
+        "billund",
+        "country",
+        "different",
+        "flight",
+        "had",
+        "in",
+        "named",
+        "names",
+        "or",
+        "pilot",
+        "piloted",
+        "states",
+        "the",
+        "united",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "a",
+        "airport",
+        "are",
+        "country",
+        "different",
+        "flight",
+        "had",
+        "in",
+        "literal",
+        "named",
+        "names",
+        "or",
+        "pilot",
+        "piloted",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 3,
+        "or": 1,
+        "literal": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-abb26e6a5c694633",
+      "db": "local_govt_and_lot",
+      "words": [
+        "and",
+        "corresponding",
+        "customer",
+        "date",
+        "details",
+        "each",
+        "id",
+        "in",
+        "is",
+        "move",
+        "s",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "and",
+        "corresponding",
+        "customer",
+        "date",
+        "details",
+        "each",
+        "id",
+        "in",
+        "is",
+        "move",
+        "s",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 3,
+        "table": 4,
+        "eq": 3
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-e6e062d18cbdface",
+      "db": "match_season",
+      "words": [
+        "are",
+        "do",
+        "have",
+        "match",
+        "names",
+        "no",
+        "of",
+        "record",
+        "season",
+        "teams",
+        "that",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "do",
+        "have",
+        "match",
+        "names",
+        "no",
+        "of",
+        "record",
+        "season",
+        "teams",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "or": 3,
+        "is": 4,
+        "null": 4
+      },
+      "error": "no such column",
+      "edits": [
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-edf47d8c53caa4a6",
+      "db": "workshop_paper",
+      "words": [
+        "authors",
+        "have",
+        "more",
+        "one",
+        "show",
+        "submissions",
+        "than",
+        "the",
+        "to",
+        "who",
+        "workshop"
+      ],
+      "masked": [
+        "authors",
+        "have",
+        "more",
+        "one",
+        "show",
+        "submissions",
+        "than",
+        "the",
+        "to",
+        "who",
+        "workshop"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "having": 1,
+        "table": 2,
+        "eq": 1,
+        "gt": 1,
+        "count": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-c2751e1b0f8445f3",
+      "db": "allergy_1",
+      "words": [
+        "allergy",
+        "common",
+        "is",
+        "most",
+        "type",
+        "which"
+      ],
+      "masked": [
+        "allergy",
+        "common",
+        "is",
+        "most",
+        "type",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "limit": 1,
+        "from": 1,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-d656b09ec4cfd02f",
+      "db": "flight_4",
+      "words": [
+        "airports",
+        "country",
+        "from",
+        "is",
+        "least",
+        "most",
+        "number",
+        "of",
+        "ordered",
+        "per",
+        "the",
+        "to",
+        "what"
+      ],
+      "masked": [
+        "airports",
+        "country",
+        "from",
+        "is",
+        "least",
+        "most",
+        "number",
+        "of",
+        "ordered",
+        "per",
+        "the",
+        "to",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1,
+        "star": 1
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-5862f321645a8c03",
+      "db": "phone_market",
+      "words": [
+        "and",
+        "each",
+        "for",
+        "its",
+        "names",
+        "number",
+        "of",
+        "phone",
+        "show",
+        "stocks",
+        "total"
+      ],
+      "masked": [
+        "and",
+        "each",
+        "for",
+        "its",
+        "names",
+        "number",
+        "of",
+        "phone",
+        "show",
+        "stocks",
+        "total"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "table": 3,
+        "eq": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-10ac6a0d4abde268",
+      "db": "sakila_1",
+      "words": [
+        "actors",
+        "actresses",
+        "and",
+        "description",
+        "film",
+        "has",
+        "id",
+        "list",
+        "most",
+        "name",
+        "number",
+        "of",
+        "or",
+        "the",
+        "which"
+      ],
+      "masked": [
+        "actors",
+        "actresses",
+        "and",
+        "description",
+        "film",
+        "has",
+        "id",
+        "list",
+        "most",
+        "name",
+        "number",
+        "of",
+        "or",
+        "the",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 11,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1,
+        "count": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-e384f9615914cc71",
+      "db": "hospital_1",
+      "words": [
+        "are",
+        "expensive",
+        "in",
+        "more",
+        "physicians",
+        "procedures",
+        "than",
+        "that",
+        "trained",
+        "which"
+      ],
+      "masked": [
+        "are",
+        "expensive",
+        "in",
+        "literal",
+        "more",
+        "physicians",
+        "procedures",
+        "than",
+        "that",
+        "trained",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 2,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-d677270382049598",
+      "db": "soccer_2",
+      "words": [
+        "but",
+        "college",
+        "goalie",
+        "have",
+        "how",
+        "in",
+        "many",
+        "mid",
+        "not",
+        "playing",
+        "position",
+        "some",
+        "states",
+        "students",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "but",
+        "college",
+        "goalie",
+        "have",
+        "how",
+        "in",
+        "many",
+        "mid",
+        "not",
+        "playing",
+        "position",
+        "some",
+        "states",
+        "students",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 1,
+        "distinct": 1,
+        "column": 5,
+        "neq": 1,
+        "literal": 2
+      },
+      "error": "public match",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-9d3553bf282c2ec9",
+      "db": "college_1",
+      "words": [
+        "classes",
+        "each",
+        "exist",
+        "for",
+        "how",
+        "many",
+        "school"
+      ],
+      "masked": [
+        "classes",
+        "each",
+        "exist",
+        "for",
+        "how",
+        "many",
+        "school"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 3,
+        "group": 1,
+        "count": 1,
+        "table": 4,
+        "eq": 3
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-8d628eb7000f13b7",
+      "db": "tracking_grants_for_research",
+      "words": [
+        "and",
+        "are",
+        "details",
+        "ids",
+        "most",
+        "of",
+        "organization",
+        "research",
+        "staff",
+        "the",
+        "types",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "details",
+        "ids",
+        "most",
+        "of",
+        "organization",
+        "research",
+        "staff",
+        "the",
+        "types",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 19,
+        "from": 1,
+        "join": 5,
+        "where": 1,
+        "group": 1,
+        "order": 1,
+        "table": 6,
+        "eq": 6,
+        "ordered": 1
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-2da5adeed09137f6",
+      "db": "student_1",
+      "words": [
+        "and",
+        "first",
+        "give",
+        "last",
+        "me",
+        "most",
+        "name",
+        "of",
+        "students",
+        "teacher",
+        "teaches",
+        "the",
+        "which"
+      ],
+      "masked": [
+        "and",
+        "first",
+        "give",
+        "last",
+        "me",
+        "most",
+        "name",
+        "of",
+        "students",
+        "teacher",
+        "teaches",
+        "the",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "limit": 1,
+        "from": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-92127dd880edf096",
+      "db": "products_gen_characteristics",
+      "words": [
+        "characteristics",
+        "count",
+        "laurel",
+        "named",
+        "number",
+        "of",
+        "product",
+        "the"
+      ],
+      "masked": [
+        "characteristics",
+        "count",
+        "literal",
+        "named",
+        "number",
+        "of",
+        "product",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "where": 1,
+        "count": 1,
+        "table": 1,
+        "eq": 1,
+        "star": 1,
+        "column": 1,
+        "literal": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-a71a73dd665128c9",
+      "db": "music_2",
+      "words": [
+        "all",
+        "find",
+        "first",
+        "musicians",
+        "name",
+        "of",
+        "positions",
+        "solveig",
+        "stage",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "all",
+        "find",
+        "first",
+        "literal",
+        "musicians",
+        "name",
+        "of",
+        "positions",
+        "stage",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-4f5b130901d31075",
+      "db": "customers_and_addresses",
+      "words": [
+        "bought",
+        "have",
+        "heaney",
+        "how",
+        "in",
+        "many",
+        "of",
+        "products",
+        "rodrick",
+        "total",
+        "types"
+      ],
+      "masked": [
+        "bought",
+        "have",
+        "heaney",
+        "how",
+        "in",
+        "many",
+        "of",
+        "products",
+        "rodrick",
+        "total",
+        "types"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "count": 1,
+        "table": 3,
+        "eq": 3,
+        "distinct": 1,
+        "column": 6,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-53244827712ed225",
+      "db": "formula_1",
+      "words": [
+        "after",
+        "and",
+        "driver",
+        "id",
+        "in",
+        "is",
+        "last",
+        "most",
+        "name",
+        "of",
+        "participated",
+        "races",
+        "the",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "after",
+        "and",
+        "driver",
+        "id",
+        "in",
+        "is",
+        "last",
+        "literal",
+        "most",
+        "name",
+        "of",
+        "participated",
+        "races",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "order": 1,
+        "literal": 2,
+        "table": 3,
+        "eq": 2,
+        "gte": 1,
+        "ordered": 1,
+        "count": 1
+      },
+      "error": "misuse of aggregate",
+      "edits": [
+        "join_key",
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-2b14d66b7b30cb1d",
+      "db": "news_report",
+      "words": [
+        "and",
+        "ascending",
+        "events",
+        "in",
+        "journalists",
+        "names",
+        "of",
+        "order",
+        "reported",
+        "show",
+        "the",
+        "they"
+      ],
+      "masked": [
+        "and",
+        "ascending",
+        "events",
+        "in",
+        "journalists",
+        "names",
+        "of",
+        "order",
+        "reported",
+        "show",
+        "the",
+        "they"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "from": 1,
+        "join": 2,
+        "order": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-8a4643fe5a0c3589",
+      "db": "tracking_orders",
+      "words": [
+        "and",
+        "both",
+        "customers",
+        "find",
+        "have",
+        "names",
+        "of",
+        "on",
+        "order",
+        "road",
+        "shipped",
+        "status",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "and",
+        "both",
+        "customers",
+        "find",
+        "have",
+        "literal",
+        "names",
+        "of",
+        "order",
+        "status",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 11,
+        "from": 1,
+        "join": 4,
+        "where": 1,
+        "table": 5,
+        "eq": 6,
+        "and": 1,
+        "literal": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f11f91817ee4e21f",
+      "db": "cre_Drama_Workshop_Groups",
+      "words": [
+        "addresses",
+        "alaska",
+        "drama",
+        "email",
+        "groups",
+        "in",
+        "list",
+        "located",
+        "of",
+        "state",
+        "the",
+        "workshop"
+      ],
+      "masked": [
+        "addresses",
+        "alaska",
+        "drama",
+        "email",
+        "groups",
+        "in",
+        "list",
+        "located",
+        "of",
+        "state",
+        "the",
+        "workshop"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-51950b86af56b224",
+      "db": "debate",
+      "words": [
+        "affirmative",
+        "and",
+        "are",
+        "dates",
+        "debates",
+        "names",
+        "of",
+        "on",
+        "people",
+        "show",
+        "side",
+        "the",
+        "they",
+        "venues"
+      ],
+      "masked": [
+        "affirmative",
+        "and",
+        "are",
+        "dates",
+        "debates",
+        "names",
+        "of",
+        "on",
+        "people",
+        "show",
+        "side",
+        "the",
+        "they",
+        "venues"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "boolean": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-64c9e3bcdb06a181",
+      "db": "gymnast",
+      "words": [
+        "are",
+        "domingo",
+        "gymnasts",
+        "hometown",
+        "is",
+        "names",
+        "not",
+        "of",
+        "santo",
+        "the",
+        "what",
+        "whose"
+      ],
+      "masked": [
+        "are",
+        "gymnasts",
+        "hometown",
+        "is",
+        "literal",
+        "names",
+        "not",
+        "of",
+        "the",
+        "what",
+        "whose"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "neq": 1,
+        "literal": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-4ee5662f50e8baeb",
+      "db": "insurance_and_eClaims",
+      "words": [
+        "a",
+        "amount",
+        "claim",
+        "customer",
+        "details",
+        "in",
+        "largest",
+        "made",
+        "of",
+        "return",
+        "single",
+        "the",
+        "which"
+      ],
+      "masked": [
+        "a",
+        "amount",
+        "claim",
+        "customer",
+        "details",
+        "in",
+        "largest",
+        "made",
+        "of",
+        "return",
+        "single",
+        "the",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 15,
+        "from": 1,
+        "join": 3,
+        "where": 1,
+        "table": 4,
+        "eq": 7,
+        "and": 4,
+        "gt": 1,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-a0f8d4e375bd5ac6",
+      "db": "election",
+      "words": [
+        "and",
+        "delegates",
+        "each",
+        "for",
+        "from",
+        "name",
+        "number",
+        "of",
+        "party",
+        "return",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "and",
+        "delegates",
+        "each",
+        "for",
+        "from",
+        "name",
+        "number",
+        "of",
+        "party",
+        "return",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-fc28316bf4515a35",
+      "db": "coffee_shop",
+      "words": [
+        "a",
+        "address",
+        "and",
+        "are",
+        "happy",
+        "have",
+        "hour",
+        "id",
+        "in",
+        "may",
+        "of",
+        "shops",
+        "the",
+        "what",
+        "which"
+      ],
+      "masked": [
+        "a",
+        "address",
+        "and",
+        "are",
+        "happy",
+        "have",
+        "hour",
+        "id",
+        "in",
+        "may",
+        "of",
+        "shops",
+        "the",
+        "what",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 11,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 1,
+        "anonymous": 3,
+        "literal": 1
+      },
+      "error": "'happy_hour' is not a function",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-7fa54b7cce7d9c31",
+      "db": "party_people",
+      "words": [
+        "charge",
+        "events",
+        "greatest",
+        "in",
+        "is",
+        "member",
+        "name",
+        "number",
+        "of",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "charge",
+        "events",
+        "greatest",
+        "in",
+        "is",
+        "member",
+        "name",
+        "number",
+        "of",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "limit": 1,
+        "from": 1,
+        "join": 3,
+        "where": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 4,
+        "eq": 3,
+        "not": 1,
+        "ordered": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-73816ebb1a368323",
+      "db": "farm",
+      "words": [
+        "across",
+        "cities",
+        "common",
+        "list",
+        "most",
+        "of",
+        "status",
+        "the",
+        "type"
+      ],
+      "masked": [
+        "across",
+        "cities",
+        "common",
+        "list",
+        "most",
+        "of",
+        "status",
+        "the",
+        "type"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "limit": 1,
+        "from": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-a9c8daaca663f3ac",
+      "db": "swimming",
+      "words": [
+        "any",
+        "event",
+        "find",
+        "had",
+        "have",
+        "names",
+        "never",
+        "of",
+        "stadiums",
+        "the",
+        "which"
+      ],
+      "masked": [
+        "any",
+        "event",
+        "find",
+        "had",
+        "have",
+        "names",
+        "never",
+        "of",
+        "stadiums",
+        "the",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-829265a9041be102",
+      "db": "station_weather",
+      "words": [
+        "and",
+        "authority",
+        "find",
+        "higher",
+        "id",
+        "is",
+        "local",
+        "maximum",
+        "of",
+        "precipitation",
+        "station",
+        "than",
+        "the",
+        "whose"
+      ],
+      "masked": [
+        "and",
+        "authority",
+        "find",
+        "higher",
+        "id",
+        "is",
+        "literal",
+        "local",
+        "maximum",
+        "of",
+        "precipitation",
+        "station",
+        "than",
+        "the",
+        "whose"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-91a674892b748205",
+      "db": "game_injury",
+      "words": [
+        "each",
+        "games",
+        "has",
+        "held",
+        "how",
+        "many",
+        "stadium"
+      ],
+      "masked": [
+        "each",
+        "games",
+        "has",
+        "held",
+        "how",
+        "many",
+        "stadium"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-7ee60110adfc378b",
+      "db": "cre_Doc_Control_Systems",
+      "words": [
+        "description",
+        "document",
+        "id",
+        "is",
+        "of",
+        "status",
+        "the",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "description",
+        "document",
+        "id",
+        "is",
+        "literal",
+        "of",
+        "status",
+        "the",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-1a0eeaaa411f11ae",
+      "db": "local_govt_in_alabama",
+      "words": [
+        "event",
+        "id",
+        "is",
+        "most",
+        "of",
+        "participants",
+        "the",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "event",
+        "id",
+        "is",
+        "most",
+        "of",
+        "participants",
+        "the",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-7be7c8ec29e5b05f",
+      "db": "company_1",
+      "words": [
+        "are",
+        "departments",
+        "find",
+        "houston",
+        "in",
+        "located",
+        "names",
+        "of",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "are",
+        "departments",
+        "find",
+        "houston",
+        "in",
+        "located",
+        "names",
+        "of",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-21e88476ece12ac7",
+      "db": "epinions_1",
+      "words": [
+        "find",
+        "gives",
+        "most",
+        "name",
+        "of",
+        "reviews",
+        "the",
+        "user",
+        "who"
+      ],
+      "masked": [
+        "find",
+        "gives",
+        "most",
+        "name",
+        "of",
+        "reviews",
+        "the",
+        "user",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "limit": 1,
+        "from": 1,
+        "join": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-bda6eea05fb177de",
+      "db": "hr_1",
+      "words": [
+        "and",
+        "city",
+        "department",
+        "display",
+        "each",
+        "employee",
+        "first",
+        "for",
+        "last",
+        "name",
+        "province",
+        "state",
+        "the"
+      ],
+      "masked": [
+        "and",
+        "city",
+        "department",
+        "display",
+        "each",
+        "employee",
+        "first",
+        "for",
+        "last",
+        "name",
+        "province",
+        "state",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 10,
+        "from": 1,
+        "join": 3,
+        "table": 4,
+        "eq": 3
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-e4ffac9f336af8a9",
+      "db": "scientist_1",
+      "words": [
+        "any",
+        "are",
+        "assigned",
+        "names",
+        "of",
+        "project",
+        "scientists",
+        "the",
+        "to",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "any",
+        "are",
+        "assigned",
+        "names",
+        "of",
+        "project",
+        "scientists",
+        "the",
+        "to",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 2,
+        "not": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-df63b255e423f6da",
+      "db": "club_1",
+      "words": [
+        "club",
+        "has",
+        "in",
+        "majoring",
+        "members",
+        "most",
+        "the",
+        "which"
+      ],
+      "masked": [
+        "club",
+        "has",
+        "in",
+        "literal",
+        "majoring",
+        "members",
+        "most",
+        "the",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "having": 1,
+        "where": 1,
+        "count": 2,
+        "table": 2,
+        "eq": 2,
+        "gt": 1,
+        "literal": 2
+      },
+      "error": "near \"WHERE\"",
+      "edits": [
+        "add_join",
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-cfa422e9315651d0",
+      "db": "mountain_photos",
+      "words": [
+        "and",
+        "are",
+        "for",
+        "id",
+        "mountains",
+        "name",
+        "of",
+        "photos",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "for",
+        "id",
+        "mountains",
+        "name",
+        "of",
+        "photos",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "table": 3,
+        "eq": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-04b59d6b671c9e9d",
+      "db": "department_management",
+      "words": [
+        "a",
+        "and",
+        "at",
+        "department",
+        "has",
+        "head",
+        "heads",
+        "id",
+        "list",
+        "more",
+        "name",
+        "number",
+        "of",
+        "than",
+        "the",
+        "time",
+        "which"
+      ],
+      "masked": [
+        "a",
+        "and",
+        "at",
+        "department",
+        "has",
+        "head",
+        "heads",
+        "id",
+        "list",
+        "literal",
+        "more",
+        "name",
+        "number",
+        "of",
+        "than",
+        "the",
+        "time",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 3,
+        "and": 2,
+        "gt": 1,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-b1089024e31f1959",
+      "db": "race_track",
+      "words": [
+        "greatest",
+        "had",
+        "has",
+        "is",
+        "name",
+        "number",
+        "of",
+        "races",
+        "that",
+        "the",
+        "track",
+        "what"
+      ],
+      "masked": [
+        "greatest",
+        "had",
+        "has",
+        "is",
+        "name",
+        "number",
+        "of",
+        "races",
+        "that",
+        "the",
+        "track",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 3,
+        "or": 1,
+        "literal": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-d9baea59a1f39500",
+      "db": "machine_repair",
+      "words": [
+        "has",
+        "most",
+        "number",
+        "of",
+        "please",
+        "show",
+        "team",
+        "technicians",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "has",
+        "most",
+        "number",
+        "of",
+        "please",
+        "show",
+        "team",
+        "technicians",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "limit": 1,
+        "from": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-b1ceacaa0b42325a",
+      "db": "movie_1",
+      "words": [
+        "all",
+        "and",
+        "are",
+        "dates",
+        "directed",
+        "director",
+        "each",
+        "for",
+        "more",
+        "movie",
+        "movies",
+        "of",
+        "one",
+        "release",
+        "than",
+        "the",
+        "those",
+        "titles",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "are",
+        "dates",
+        "directed",
+        "director",
+        "each",
+        "for",
+        "more",
+        "movie",
+        "movies",
+        "of",
+        "one",
+        "release",
+        "than",
+        "the",
+        "those",
+        "titles",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 12,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "group": 1,
+        "having": 1,
+        "order": 1,
+        "table": 2,
+        "eq": 1,
+        "not": 2,
+        "and": 1,
+        "ordered": 2,
+        "is": 2,
+        "neq": 1,
+        "null": 2,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-ac3fed335c4052f1",
+      "db": "musical",
+      "words": [
+        "actors",
+        "and",
+        "appeared",
+        "have",
+        "in",
+        "musicals",
+        "names",
+        "number",
+        "of",
+        "show",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "actors",
+        "and",
+        "appeared",
+        "have",
+        "in",
+        "musicals",
+        "names",
+        "number",
+        "of",
+        "show",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-0e4af6c00ed999c4",
+      "db": "ship_mission",
+      "words": [
+        "any",
+        "are",
+        "in",
+        "involved",
+        "missions",
+        "names",
+        "not",
+        "of",
+        "ships",
+        "that",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "any",
+        "are",
+        "in",
+        "involved",
+        "missions",
+        "names",
+        "not",
+        "of",
+        "ships",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-da24e10f55f3b9af",
+      "db": "medicine_enzyme_interaction",
+      "words": [
+        "and",
+        "at",
+        "can",
+        "enzymes",
+        "id",
+        "interact",
+        "is",
+        "least",
+        "medicines",
+        "name",
+        "of",
+        "the",
+        "trade",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "and",
+        "at",
+        "can",
+        "enzymes",
+        "id",
+        "interact",
+        "is",
+        "least",
+        "literal",
+        "medicines",
+        "name",
+        "of",
+        "the",
+        "trade",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 1,
+        "gte": 1,
+        "literal": 2,
+        "count": 1
+      },
+      "error": "misuse of aggregate function COUNT()",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-e8553df1a5388af1",
+      "db": "party_host",
+      "words": [
+        "and",
+        "hosts",
+        "names",
+        "of",
+        "parties",
+        "party",
+        "show",
+        "the",
+        "themes"
+      ],
+      "masked": [
+        "and",
+        "hosts",
+        "names",
+        "of",
+        "parties",
+        "party",
+        "show",
+        "the",
+        "themes"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "table": 3,
+        "eq": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-fc903a50b5b0b68f",
+      "db": "icfp_1",
+      "words": [
+        "author",
+        "has",
+        "is",
+        "last",
+        "most",
+        "name",
+        "of",
+        "papers",
+        "published",
+        "that",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "author",
+        "has",
+        "is",
+        "last",
+        "most",
+        "name",
+        "of",
+        "papers",
+        "published",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-9fee80045b000f87",
+      "db": "workshop_paper",
+      "words": [
+        "any",
+        "authors",
+        "do",
+        "have",
+        "list",
+        "not",
+        "submission",
+        "the",
+        "to",
+        "who",
+        "workshop"
+      ],
+      "masked": [
+        "any",
+        "authors",
+        "do",
+        "have",
+        "list",
+        "not",
+        "submission",
+        "the",
+        "to",
+        "who",
+        "workshop"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-365bd7366e3b5402",
+      "db": "candidate_poll",
+      "words": [
+        "candidates",
+        "find",
+        "is",
+        "lower",
+        "names",
+        "of",
+        "oppose",
+        "percentage",
+        "rate",
+        "support",
+        "than",
+        "the",
+        "their",
+        "whose"
+      ],
+      "masked": [
+        "candidates",
+        "find",
+        "is",
+        "lower",
+        "names",
+        "of",
+        "oppose",
+        "percentage",
+        "rate",
+        "support",
+        "than",
+        "the",
+        "their",
+        "whose"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "lt": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-6ac5f12af6e1f380",
+      "db": "phone_market",
+      "words": [
+        "bigger",
+        "descending",
+        "have",
+        "in",
+        "names",
+        "number",
+        "of",
+        "order",
+        "phones",
+        "show",
+        "stocks",
+        "than",
+        "that",
+        "the",
+        "total"
+      ],
+      "masked": [
+        "bigger",
+        "descending",
+        "have",
+        "in",
+        "literal",
+        "names",
+        "number",
+        "of",
+        "order",
+        "phones",
+        "show",
+        "stocks",
+        "than",
+        "that",
+        "the",
+        "total"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "order": 1,
+        "table": 2,
+        "eq": 1,
+        "gt": 1,
+        "ordered": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key",
+        "group_sum",
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-3d49e6f049fa1aea",
+      "db": "sakila_1",
+      "words": [
+        "actors",
+        "are",
+        "films",
+        "full",
+        "had",
+        "in",
+        "more",
+        "names",
+        "of",
+        "roles",
+        "than",
+        "the",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "actors",
+        "are",
+        "films",
+        "full",
+        "had",
+        "in",
+        "literal",
+        "more",
+        "names",
+        "of",
+        "roles",
+        "than",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 12,
+        "from": 1,
+        "join": 4,
+        "where": 1,
+        "table": 5,
+        "eq": 4,
+        "and": 1,
+        "gt": 1,
+        "gte": 1,
+        "literal": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-324e9c81acbac1d0",
+      "db": "cre_Theme_park",
+      "words": [
+        "attraction",
+        "charge",
+        "in",
+        "is",
+        "museum",
+        "name",
+        "named",
+        "of",
+        "staff",
+        "that",
+        "the",
+        "us",
+        "what"
+      ],
+      "masked": [
+        "attraction",
+        "charge",
+        "in",
+        "is",
+        "literal",
+        "name",
+        "named",
+        "of",
+        "staff",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 6,
+        "and": 3,
+        "literal": 5
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-d170ee753d328b28",
+      "db": "decoration_competition",
+      "words": [
+        "across",
+        "common",
+        "country",
+        "members",
+        "most",
+        "show",
+        "the"
+      ],
+      "masked": [
+        "across",
+        "common",
+        "country",
+        "members",
+        "most",
+        "show",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "limit": 1,
+        "from": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1,
+        "star": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-55085340082f3d41",
+      "db": "county_public_safety",
+      "words": [
+        "and",
+        "are",
+        "cities",
+        "counties",
+        "in",
+        "names",
+        "of",
+        "show",
+        "they"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "cities",
+        "counties",
+        "in",
+        "names",
+        "of",
+        "show",
+        "they"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-4e6cbf10d5f51acc",
+      "db": "products_gen_characteristics",
+      "words": [
+        "across",
+        "all",
+        "characteristic",
+        "common",
+        "is",
+        "most",
+        "name",
+        "of",
+        "products",
+        "return",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "across",
+        "all",
+        "characteristic",
+        "common",
+        "is",
+        "most",
+        "name",
+        "of",
+        "products",
+        "return",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-faf60d3f16a454ab",
+      "db": "perpetrator",
+      "words": [
+        "are",
+        "descending",
+        "heights",
+        "in",
+        "injured",
+        "number",
+        "of",
+        "order",
+        "people",
+        "perpetrators",
+        "the",
+        "they",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "descending",
+        "heights",
+        "in",
+        "injured",
+        "number",
+        "of",
+        "order",
+        "people",
+        "perpetrators",
+        "the",
+        "they",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 1,
+        "order": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-70503776dbfcce79",
+      "db": "csu_1",
+      "words": [
+        "conferred",
+        "degrees",
+        "francisco",
+        "in",
+        "san",
+        "state",
+        "the",
+        "university",
+        "were",
+        "what",
+        "year"
+      ],
+      "masked": [
+        "conferred",
+        "degrees",
+        "francisco",
+        "in",
+        "literal",
+        "san",
+        "state",
+        "the",
+        "university",
+        "were",
+        "what",
+        "year"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 3,
+        "and": 1,
+        "literal": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-99151caed2dfcd8c",
+      "db": "tracking_share_transactions",
+      "words": [
+        "amount",
+        "and",
+        "are",
+        "dates",
+        "details",
+        "of",
+        "sale",
+        "smaller",
+        "than",
+        "the",
+        "transactions",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "amount",
+        "and",
+        "are",
+        "dates",
+        "details",
+        "literal",
+        "of",
+        "sale",
+        "smaller",
+        "than",
+        "the",
+        "transactions",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "lt": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-48b9697eac27c64b",
+      "db": "school_finance",
+      "words": [
+        "after",
+        "amount",
+        "and",
+        "budgeted",
+        "each",
+        "in",
+        "invested",
+        "its",
+        "name",
+        "or",
+        "school",
+        "show",
+        "year"
+      ],
+      "masked": [
+        "after",
+        "amount",
+        "and",
+        "budgeted",
+        "each",
+        "in",
+        "invested",
+        "its",
+        "literal",
+        "name",
+        "or",
+        "school",
+        "show",
+        "year"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "or": 1,
+        "gt": 1,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key",
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-da560b6b7a0924aa",
+      "db": "music_4",
+      "words": [
+        "a",
+        "are",
+        "at",
+        "festivals",
+        "have",
+        "in",
+        "music",
+        "nomination",
+        "resulted",
+        "songs",
+        "that",
+        "the",
+        "volumes",
+        "what"
+      ],
+      "masked": [
+        "a",
+        "are",
+        "at",
+        "festivals",
+        "have",
+        "in",
+        "music",
+        "nomination",
+        "resulted",
+        "songs",
+        "that",
+        "the",
+        "volumes",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-09a4618c8853a8ba",
+      "db": "chinook_1",
+      "words": [
+        "and",
+        "are",
+        "astrid",
+        "customers",
+        "dates",
+        "first",
+        "for",
+        "gruber",
+        "invoice",
+        "last",
+        "name",
+        "the",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "astrid",
+        "customers",
+        "dates",
+        "first",
+        "for",
+        "gruber",
+        "invoice",
+        "last",
+        "name",
+        "the",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 3,
+        "and": 1,
+        "literal": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-0925fe4cf4f4fdeb",
+      "db": "network_2",
+      "words": [
+        "friend",
+        "has",
+        "is",
+        "no",
+        "person",
+        "that",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "friend",
+        "has",
+        "is",
+        "no",
+        "person",
+        "that",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-eec0bbe7c4f0049f",
+      "db": "riding_club",
+      "words": [
+        "a",
+        "after",
+        "and",
+        "coach",
+        "genders",
+        "names",
+        "of",
+        "players",
+        "show",
+        "starting",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "a",
+        "after",
+        "and",
+        "coach",
+        "genders",
+        "literal",
+        "names",
+        "of",
+        "players",
+        "show",
+        "starting",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 1,
+        "gte": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key",
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-861897e88cd4c97b",
+      "db": "debate",
+      "words": [
+        "alphabetical",
+        "and",
+        "are",
+        "ascending",
+        "dates",
+        "debates",
+        "in",
+        "name",
+        "names",
+        "negative",
+        "of",
+        "on",
+        "order",
+        "ordered",
+        "people",
+        "show",
+        "side",
+        "the",
+        "they",
+        "venues"
+      ],
+      "masked": [
+        "alphabetical",
+        "and",
+        "are",
+        "ascending",
+        "dates",
+        "debates",
+        "in",
+        "name",
+        "names",
+        "negative",
+        "of",
+        "on",
+        "order",
+        "ordered",
+        "people",
+        "show",
+        "side",
+        "the",
+        "they",
+        "venues"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "order": 1,
+        "table": 2,
+        "eq": 2,
+        "ordered": 1,
+        "boolean": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-cbc4944e4d671156",
+      "db": "assets_maintenance",
+      "words": [
+        "and",
+        "assets",
+        "company",
+        "count",
+        "does",
+        "each",
+        "how",
+        "id",
+        "list",
+        "many",
+        "party",
+        "supply",
+        "the",
+        "third"
+      ],
+      "masked": [
+        "and",
+        "assets",
+        "company",
+        "count",
+        "does",
+        "each",
+        "how",
+        "id",
+        "list",
+        "many",
+        "party",
+        "supply",
+        "the",
+        "third"
+      ],
+      "shape": {
+        "select": 1,
+        "count": 1,
+        "column": 9,
+        "from": 1,
+        "join": 3,
+        "group": 1,
+        "distinct": 1,
+        "table": 4,
+        "eq": 3
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-76c2580faa20ec97",
+      "db": "insurance_and_eClaims",
+      "words": [
+        "an",
+        "code",
+        "customer",
+        "customers",
+        "deputy",
+        "details",
+        "give",
+        "have",
+        "insurance",
+        "me",
+        "policy",
+        "the",
+        "type",
+        "which",
+        "with"
+      ],
+      "masked": [
+        "an",
+        "code",
+        "customer",
+        "customers",
+        "details",
+        "give",
+        "have",
+        "insurance",
+        "literal",
+        "me",
+        "policy",
+        "the",
+        "type",
+        "which",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-a2fb7de42b335e1d",
+      "db": "election",
+      "words": [
+        "are",
+        "delegate",
+        "each",
+        "find",
+        "for",
+        "names",
+        "of",
+        "part",
+        "party",
+        "the",
+        "they"
+      ],
+      "masked": [
+        "are",
+        "delegate",
+        "each",
+        "find",
+        "for",
+        "names",
+        "of",
+        "part",
+        "party",
+        "the",
+        "they"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f4044a013c383be6",
+      "db": "customers_campaigns_ecommerce",
+      "words": [
+        "customers",
+        "have",
+        "mailshots",
+        "most",
+        "names",
+        "of",
+        "show",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "customers",
+        "have",
+        "mailshots",
+        "most",
+        "names",
+        "of",
+        "show",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1,
+        "count": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-aa4b644a869ad5cf",
+      "db": "swimming",
+      "words": [
+        "australian",
+        "been",
+        "find",
+        "have",
+        "names",
+        "of",
+        "some",
+        "stadiums",
+        "swimmers",
+        "that",
+        "the",
+        "to"
+      ],
+      "masked": [
+        "australian",
+        "been",
+        "find",
+        "have",
+        "names",
+        "of",
+        "some",
+        "stadiums",
+        "swimmers",
+        "that",
+        "the",
+        "to"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-5d25a4ac6a798445",
+      "db": "twitter_1",
+      "words": [
+        "and",
+        "email",
+        "find",
+        "follower",
+        "for",
+        "have",
+        "more",
+        "name",
+        "one",
+        "than",
+        "the",
+        "users",
+        "who"
+      ],
+      "masked": [
+        "and",
+        "email",
+        "find",
+        "follower",
+        "for",
+        "have",
+        "more",
+        "name",
+        "one",
+        "than",
+        "the",
+        "users",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-e5a6fd71232381be",
+      "db": "device",
+      "words": [
+        "devices",
+        "has",
+        "in",
+        "kind",
+        "most",
+        "name",
+        "of",
+        "shop",
+        "show",
+        "stock",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "devices",
+        "has",
+        "in",
+        "kind",
+        "most",
+        "name",
+        "of",
+        "shop",
+        "show",
+        "stock",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1,
+        "count": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-a658c686f85c064f",
+      "db": "local_govt_in_alabama",
+      "words": [
+        "any",
+        "detail",
+        "does",
+        "events",
+        "have",
+        "id",
+        "kenyatta",
+        "kuhn",
+        "not",
+        "participant",
+        "which",
+        "with"
+      ],
+      "masked": [
+        "any",
+        "detail",
+        "does",
+        "events",
+        "have",
+        "id",
+        "literal",
+        "not",
+        "participant",
+        "which",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "like": 1,
+        "literal": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-83686e71fd80cf6c",
+      "db": "product_catalog",
+      "words": [
+        "and",
+        "attribute",
+        "definitions",
+        "give",
+        "have",
+        "id",
+        "me",
+        "name",
+        "the",
+        "value",
+        "which"
+      ],
+      "masked": [
+        "and",
+        "attribute",
+        "definitions",
+        "give",
+        "have",
+        "id",
+        "literal",
+        "me",
+        "name",
+        "the",
+        "value",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-9ba1fb058e046788",
+      "db": "hr_1",
+      "words": [
+        "and",
+        "any",
+        "department",
+        "display",
+        "employees",
+        "first",
+        "full",
+        "in",
+        "last",
+        "located",
+        "london",
+        "name",
+        "of",
+        "salary",
+        "the",
+        "those",
+        "who",
+        "working"
+      ],
+      "masked": [
+        "and",
+        "any",
+        "department",
+        "display",
+        "employees",
+        "first",
+        "full",
+        "in",
+        "last",
+        "located",
+        "london",
+        "name",
+        "of",
+        "salary",
+        "the",
+        "those",
+        "who",
+        "working"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 10,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 4,
+        "and": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f8222bd61eed1856",
+      "db": "cre_Doc_Tracking_DB",
+      "words": [
+        "a",
+        "book",
+        "document",
+        "for",
+        "how",
+        "is",
+        "name",
+        "read",
+        "the",
+        "to",
+        "type",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "document",
+        "for",
+        "is",
+        "literal",
+        "name",
+        "the",
+        "type",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-1ccc914bd169fa6b",
+      "db": "club_1",
+      "words": [
+        "and",
+        "club",
+        "gaming",
+        "have",
+        "how",
+        "in",
+        "many",
+        "membership",
+        "paper",
+        "pen",
+        "people",
+        "the"
+      ],
+      "masked": [
+        "club",
+        "have",
+        "how",
+        "in",
+        "literal",
+        "many",
+        "membership",
+        "people",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 2,
+        "star": 1,
+        "column": 3,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-1e59db56f53daff2",
+      "db": "student_assessment",
+      "words": [
+        "all",
+        "and",
+        "are",
+        "candidates",
+        "first",
+        "last",
+        "name",
+        "of",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "are",
+        "candidates",
+        "first",
+        "last",
+        "name",
+        "of",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 3,
+        "where": 1,
+        "table": 4,
+        "eq": 3,
+        "is": 1,
+        "anonymous": 1,
+        "null": 1
+      },
+      "error": "no such table",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-43ea2a191fff1e8c",
+      "db": "school_bus",
+      "words": [
+        "and",
+        "buses",
+        "each",
+        "for",
+        "number",
+        "of",
+        "school",
+        "show",
+        "the",
+        "type"
+      ],
+      "masked": [
+        "and",
+        "buses",
+        "each",
+        "for",
+        "number",
+        "of",
+        "school",
+        "show",
+        "the",
+        "type"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-2f4aae5c00c66e40",
+      "db": "movie_1",
+      "words": [
+        "and",
+        "any",
+        "as",
+        "director",
+        "for",
+        "is",
+        "movie",
+        "name",
+        "number",
+        "of",
+        "rating",
+        "return",
+        "reviewer",
+        "same",
+        "stars",
+        "the",
+        "title",
+        "where"
+      ],
+      "masked": [
+        "and",
+        "any",
+        "as",
+        "director",
+        "for",
+        "is",
+        "movie",
+        "name",
+        "number",
+        "of",
+        "rating",
+        "return",
+        "reviewer",
+        "same",
+        "stars",
+        "the",
+        "title",
+        "where"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-c792569ea9025b61",
+      "db": "flight_company",
+      "words": [
+        "a",
+        "and",
+        "are",
+        "companies",
+        "ever",
+        "flight",
+        "have",
+        "names",
+        "of",
+        "operated",
+        "that",
+        "the",
+        "types",
+        "what"
+      ],
+      "masked": [
+        "a",
+        "and",
+        "are",
+        "companies",
+        "ever",
+        "flight",
+        "have",
+        "names",
+        "of",
+        "operated",
+        "that",
+        "the",
+        "types",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "not": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-82fde3c487c1785b",
+      "db": "local_govt_and_lot",
+      "words": [
+        "and",
+        "details",
+        "each",
+        "id",
+        "it",
+        "list",
+        "of",
+        "organization",
+        "owns",
+        "that",
+        "the",
+        "thing",
+        "type"
+      ],
+      "masked": [
+        "and",
+        "details",
+        "each",
+        "id",
+        "it",
+        "list",
+        "of",
+        "organization",
+        "owns",
+        "that",
+        "the",
+        "thing",
+        "type"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-df9e976ed6481735",
+      "db": "film_rank",
+      "words": [
+        "an",
+        "average",
+        "gross",
+        "have",
+        "of",
+        "over",
+        "studios",
+        "which"
+      ],
+      "masked": [
+        "an",
+        "average",
+        "gross",
+        "have",
+        "literal",
+        "of",
+        "over",
+        "studios",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "having": 1,
+        "avg": 2,
+        "table": 2,
+        "eq": 1,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-3da28649a3fa22e9",
+      "db": "wine_1",
+      "words": [
+        "are",
+        "average",
+        "county",
+        "find",
+        "from",
+        "not",
+        "of",
+        "price",
+        "produced",
+        "sonoma",
+        "that",
+        "the",
+        "wines"
+      ],
+      "masked": [
+        "are",
+        "average",
+        "county",
+        "find",
+        "from",
+        "not",
+        "of",
+        "price",
+        "produced",
+        "sonoma",
+        "that",
+        "the",
+        "wines"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "where": 1,
+        "avg": 1,
+        "table": 1,
+        "and": 1,
+        "column": 3,
+        "eq": 2,
+        "literal": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-f220bbfc64a0205f",
+      "db": "medicine_enzyme_interaction",
+      "words": [
+        "acts",
+        "amisulpride",
+        "are",
+        "as",
+        "enzymes",
+        "in",
+        "inhibitors",
+        "medicine",
+        "names",
+        "of",
+        "that",
+        "the",
+        "used",
+        "what"
+      ],
+      "masked": [
+        "acts",
+        "amisulpride",
+        "are",
+        "as",
+        "enzymes",
+        "in",
+        "inhibitors",
+        "medicine",
+        "names",
+        "of",
+        "that",
+        "the",
+        "used",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 4,
+        "and": 1,
+        "literal": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-9b2dbbe062cd32b9",
+      "db": "party_host",
+      "words": [
+        "and",
+        "both",
+        "have",
+        "hosts",
+        "nations",
+        "older",
+        "show",
+        "than",
+        "that",
+        "the",
+        "younger"
+      ],
+      "masked": [
+        "and",
+        "both",
+        "have",
+        "hosts",
+        "literal",
+        "nations",
+        "older",
+        "show",
+        "than",
+        "that",
+        "the",
+        "younger"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 2,
+        "gt": 1,
+        "lt": 1,
+        "literal": 2,
+        "boolean": 1
+      },
+      "error": "public match",
+      "edits": [
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-f7fe11541174f450",
+      "db": "icfp_1",
+      "words": [
+        "a",
+        "authors",
+        "first",
+        "functional",
+        "has",
+        "in",
+        "its",
+        "names",
+        "of",
+        "paper",
+        "return",
+        "that",
+        "the",
+        "title",
+        "who",
+        "word",
+        "written"
+      ],
+      "masked": [
+        "a",
+        "authors",
+        "first",
+        "has",
+        "in",
+        "its",
+        "literal",
+        "names",
+        "of",
+        "paper",
+        "return",
+        "that",
+        "the",
+        "title",
+        "who",
+        "word",
+        "written"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 2,
+        "like": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-6ffd9e8286bb9057",
+      "db": "company_office",
+      "words": [
+        "companies",
+        "descending",
+        "in",
+        "industries",
+        "number",
+        "of",
+        "order",
+        "please",
+        "show",
+        "the"
+      ],
+      "masked": [
+        "companies",
+        "descending",
+        "in",
+        "industries",
+        "number",
+        "of",
+        "order",
+        "please",
+        "show",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "order": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-08b4531c9bcb72e2",
+      "db": "game_1",
+      "words": [
+        "and",
+        "by",
+        "david",
+        "games",
+        "hours",
+        "is",
+        "number",
+        "of",
+        "per",
+        "played",
+        "shieber",
+        "the",
+        "total",
+        "what",
+        "work"
+      ],
+      "masked": [
+        "and",
+        "by",
+        "david",
+        "games",
+        "hours",
+        "is",
+        "number",
+        "of",
+        "per",
+        "played",
+        "shieber",
+        "the",
+        "total",
+        "what",
+        "work"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "sum": 2,
+        "table": 2,
+        "eq": 3,
+        "and": 1,
+        "column": 6,
+        "literal": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-34bda2d06aa362d0",
+      "db": "candidate_poll",
+      "words": [
+        "average",
+        "gender",
+        "got",
+        "highest",
+        "ratio",
+        "the",
+        "uncertain",
+        "which"
+      ],
+      "masked": [
+        "average",
+        "gender",
+        "got",
+        "highest",
+        "ratio",
+        "the",
+        "uncertain",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "order": 1,
+        "avg": 2,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-e8c393ded3f1f6b7",
+      "db": "apartment_rentals",
+      "words": [
+        "all",
+        "and",
+        "apartment",
+        "bookings",
+        "by",
+        "code",
+        "dates",
+        "end",
+        "female",
+        "gender",
+        "guests",
+        "made",
+        "of",
+        "show",
+        "start",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "apartment",
+        "bookings",
+        "by",
+        "code",
+        "dates",
+        "end",
+        "gender",
+        "guests",
+        "literal",
+        "made",
+        "of",
+        "show",
+        "start",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-1cf9e9ef249e6172",
+      "db": "election_representative",
+      "words": [
+        "are",
+        "descending",
+        "in",
+        "lifespans",
+        "of",
+        "order",
+        "percent",
+        "representatives",
+        "the",
+        "vote",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "descending",
+        "in",
+        "lifespans",
+        "of",
+        "order",
+        "percent",
+        "representatives",
+        "the",
+        "vote",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "order": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-46a7653b084fb5e0",
+      "db": "phone_market",
+      "words": [
+        "are",
+        "greater",
+        "market",
+        "names",
+        "number",
+        "of",
+        "on",
+        "phones",
+        "shops",
+        "show",
+        "than",
+        "that",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "are",
+        "greater",
+        "literal",
+        "market",
+        "names",
+        "number",
+        "of",
+        "on",
+        "phones",
+        "shops",
+        "show",
+        "than",
+        "that",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 1,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-d3cac4b8a409cc58",
+      "db": "sakila_1",
+      "words": [
+        "are",
+        "cost",
+        "either",
+        "films",
+        "longer",
+        "minutes",
+        "more",
+        "of",
+        "or",
+        "other",
+        "pg",
+        "rated",
+        "replace",
+        "than",
+        "that",
+        "the",
+        "those",
+        "titles",
+        "to",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "cost",
+        "either",
+        "films",
+        "literal",
+        "longer",
+        "minutes",
+        "more",
+        "of",
+        "or",
+        "other",
+        "pg",
+        "rated",
+        "replace",
+        "than",
+        "that",
+        "the",
+        "those",
+        "titles",
+        "to",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "or": 1,
+        "gt": 1,
+        "and": 1,
+        "literal": 3,
+        "eq": 1,
+        "lt": 1
+      },
+      "error": "public match",
+      "edits": [
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-fd1408498162dab8",
+      "db": "soccer_2",
+      "words": [
+        "and",
+        "decision",
+        "find",
+        "hours",
+        "is",
+        "name",
+        "of",
+        "students",
+        "the",
+        "tryout",
+        "whose",
+        "yes"
+      ],
+      "masked": [
+        "and",
+        "decision",
+        "find",
+        "hours",
+        "is",
+        "name",
+        "of",
+        "students",
+        "the",
+        "tryout",
+        "whose",
+        "yes"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-e37d507ff31c6fb8",
+      "db": "tracking_grants_for_research",
+      "words": [
+        "an",
+        "and",
+        "ascending",
+        "does",
+        "each",
+        "has",
+        "how",
+        "id",
+        "in",
+        "list",
+        "many",
+        "number",
+        "order",
+        "project",
+        "staff",
+        "the"
+      ],
+      "masked": [
+        "an",
+        "and",
+        "ascending",
+        "does",
+        "each",
+        "has",
+        "how",
+        "id",
+        "in",
+        "list",
+        "many",
+        "number",
+        "order",
+        "project",
+        "staff",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-7f39bf15d85e52fa",
+      "db": "decoration_competition",
+      "words": [
+        "and",
+        "colleges",
+        "go",
+        "members",
+        "names",
+        "of",
+        "show",
+        "the",
+        "they",
+        "to"
+      ],
+      "masked": [
+        "and",
+        "colleges",
+        "go",
+        "members",
+        "names",
+        "of",
+        "show",
+        "the",
+        "they",
+        "to"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f5872dc5b2d9d77b",
+      "db": "student_1",
+      "words": [
+        "does",
+        "how",
+        "loria",
+        "many",
+        "ondersma",
+        "students",
+        "teaches"
+      ],
+      "masked": [
+        "does",
+        "how",
+        "loria",
+        "many",
+        "ondersma",
+        "students",
+        "teaches"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 2,
+        "star": 1,
+        "column": 3,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-af36ac8cc6308411",
+      "db": "theme_gallery",
+      "words": [
+        "all",
+        "and",
+        "artist",
+        "each",
+        "exhibitions",
+        "for",
+        "names",
+        "number",
+        "of",
+        "show",
+        "the"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "artist",
+        "each",
+        "exhibitions",
+        "for",
+        "names",
+        "number",
+        "of",
+        "show",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "count": 1,
+        "table": 3,
+        "eq": 2
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f5d14b06f769bf9e",
+      "db": "products_gen_characteristics",
+      "words": [
+        "and",
+        "category",
+        "chervil",
+        "code",
+        "find",
+        "measurement",
+        "named",
+        "of",
+        "product",
+        "the",
+        "unit"
+      ],
+      "masked": [
+        "and",
+        "category",
+        "code",
+        "find",
+        "literal",
+        "measurement",
+        "named",
+        "of",
+        "product",
+        "the",
+        "unit"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-559decd70600219c",
+      "db": "perpetrator",
+      "words": [
+        "are",
+        "names",
+        "of",
+        "perpetrators",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "names",
+        "of",
+        "perpetrators",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-058f5da2e8886f16",
+      "db": "tracking_share_transactions",
+      "words": [
+        "amount",
+        "average",
+        "different",
+        "for",
+        "lots",
+        "of",
+        "show",
+        "the",
+        "transactions"
+      ],
+      "masked": [
+        "amount",
+        "average",
+        "different",
+        "for",
+        "lots",
+        "of",
+        "show",
+        "the",
+        "transactions"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "join": 4,
+        "avg": 1,
+        "table": 5,
+        "eq": 4,
+        "column": 9
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-75500d9015b99797",
+      "db": "school_finance",
+      "words": [
+        "all",
+        "amount",
+        "donation",
+        "donors",
+        "except",
+        "less",
+        "names",
+        "of",
+        "show",
+        "than",
+        "the",
+        "those",
+        "whose"
+      ],
+      "masked": [
+        "all",
+        "amount",
+        "donation",
+        "donors",
+        "except",
+        "less",
+        "literal",
+        "names",
+        "of",
+        "show",
+        "than",
+        "the",
+        "those",
+        "whose"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "gte": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-37edfd8b76381f09",
+      "db": "music_2",
+      "words": [
+        "are",
+        "in",
+        "instruments",
+        "le",
+        "pop",
+        "song",
+        "the",
+        "used",
+        "what"
+      ],
+      "masked": [
+        "are",
+        "in",
+        "instruments",
+        "literal",
+        "song",
+        "the",
+        "used",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-ca364df9233f8fbd",
+      "db": "network_2",
+      "words": [
+        "all",
+        "are",
+        "friends",
+        "from",
+        "names",
+        "new",
+        "of",
+        "the",
+        "what",
+        "who",
+        "york"
+      ],
+      "masked": [
+        "all",
+        "are",
+        "friends",
+        "from",
+        "names",
+        "new",
+        "of",
+        "the",
+        "what",
+        "who",
+        "york"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "eq": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-a4b6ea385ae1887d",
+      "db": "customers_and_addresses",
+      "words": [
+        "been",
+        "has",
+        "most",
+        "number",
+        "of",
+        "ordered",
+        "product",
+        "times",
+        "which"
+      ],
+      "masked": [
+        "been",
+        "has",
+        "most",
+        "number",
+        "of",
+        "ordered",
+        "product",
+        "times",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 3,
+        "eq": 2,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-3ffb660c63dc6910",
+      "db": "riding_club",
+      "words": [
+        "and",
+        "coaches",
+        "names",
+        "of",
+        "players",
+        "show",
+        "the",
+        "their"
+      ],
+      "masked": [
+        "and",
+        "coaches",
+        "names",
+        "of",
+        "players",
+        "show",
+        "the",
+        "their"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-abae4215b9bfb215",
+      "db": "document_management",
+      "words": [
+        "any",
+        "document",
+        "find",
+        "images",
+        "names",
+        "of",
+        "the",
+        "without"
+      ],
+      "masked": [
+        "any",
+        "document",
+        "find",
+        "images",
+        "names",
+        "of",
+        "the",
+        "without"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "anti_join"
+      ]
+    },
+    {
+      "id": "train-e1b99c4baa3b4765",
+      "db": "tracking_orders",
+      "words": [
+        "customer",
+        "customers",
+        "give",
+        "have",
+        "me",
+        "names",
+        "orders",
+        "packing",
+        "status",
+        "the",
+        "which",
+        "with"
+      ],
+      "masked": [
+        "customer",
+        "customers",
+        "give",
+        "have",
+        "literal",
+        "me",
+        "names",
+        "orders",
+        "status",
+        "the",
+        "which",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-60bd2285198668cf",
+      "db": "cre_Drama_Workshop_Groups",
+      "words": [
+        "find",
+        "id",
+        "invoices",
+        "most",
+        "of",
+        "often",
+        "on",
+        "ordered",
+        "product",
+        "the"
+      ],
+      "masked": [
+        "find",
+        "id",
+        "invoices",
+        "most",
+        "of",
+        "often",
+        "on",
+        "ordered",
+        "product",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "limit": 1,
+        "from": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-b18d83619b2b2bef",
+      "db": "school_player",
+      "words": [
+        "count",
+        "denomination",
+        "denominations",
+        "descending",
+        "each",
+        "in",
+        "of",
+        "order",
+        "return",
+        "schools",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "count",
+        "denomination",
+        "denominations",
+        "descending",
+        "each",
+        "in",
+        "of",
+        "order",
+        "return",
+        "schools",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "group": 1,
+        "order": 1,
+        "count": 1,
+        "table": 1,
+        "ordered": 1,
+        "star": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-061127fb8bf5c43f",
+      "db": "assets_maintenance",
+      "words": [
+        "and",
+        "fault",
+        "fix",
+        "id",
+        "list",
+        "most",
+        "name",
+        "number",
+        "of",
+        "part",
+        "requires",
+        "skills",
+        "the",
+        "to",
+        "which"
+      ],
+      "masked": [
+        "and",
+        "fault",
+        "fix",
+        "id",
+        "list",
+        "most",
+        "name",
+        "number",
+        "of",
+        "part",
+        "requires",
+        "skills",
+        "the",
+        "to",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 11,
+        "limit": 1,
+        "from": 1,
+        "join": 3,
+        "group": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 4,
+        "eq": 3,
+        "ordered": 1,
+        "count": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-3776a93f46398d8b",
+      "db": "behavior_monitoring",
+      "words": [
+        "address",
+        "and",
+        "are",
+        "first",
+        "in",
+        "last",
+        "names",
+        "of",
+        "state",
+        "students",
+        "the",
+        "what",
+        "wisconsin",
+        "with"
+      ],
+      "masked": [
+        "address",
+        "and",
+        "are",
+        "first",
+        "in",
+        "last",
+        "names",
+        "of",
+        "state",
+        "students",
+        "the",
+        "what",
+        "wisconsin",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-5da5df5fc8212e3f",
+      "db": "manufactory_1",
+      "words": [
+        "all",
+        "and",
+        "data",
+        "each",
+        "from",
+        "manufacturer",
+        "product",
+        "products",
+        "s",
+        "select",
+        "the"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "data",
+        "each",
+        "from",
+        "manufacturer",
+        "product",
+        "products",
+        "s",
+        "select",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-65127c58a2bbe712",
+      "db": "party_people",
+      "words": [
+        "all",
+        "and",
+        "each",
+        "in",
+        "members",
+        "names",
+        "number",
+        "of",
+        "party",
+        "show",
+        "the"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "each",
+        "in",
+        "members",
+        "names",
+        "number",
+        "of",
+        "party",
+        "show",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-093bca4853141ff7",
+      "db": "station_weather",
+      "words": [
+        "and",
+        "authority",
+        "chiltern",
+        "find",
+        "for",
+        "local",
+        "names",
+        "of",
+        "run",
+        "stations",
+        "that",
+        "the",
+        "through",
+        "times",
+        "trains"
+      ],
+      "masked": [
+        "and",
+        "authority",
+        "chiltern",
+        "find",
+        "for",
+        "local",
+        "names",
+        "of",
+        "run",
+        "stations",
+        "that",
+        "the",
+        "through",
+        "times",
+        "trains"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 7,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "literal": 1
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-5dbc428267ae8911",
+      "db": "voter_2",
+      "words": [
+        "by",
+        "female",
+        "find",
+        "is",
+        "major",
+        "most",
+        "students",
+        "studied",
+        "that",
+        "the"
+      ],
+      "masked": [
+        "by",
+        "female",
+        "find",
+        "is",
+        "major",
+        "most",
+        "students",
+        "studied",
+        "that",
+        "the"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "limit": 1,
+        "from": 1,
+        "where": 1,
+        "order": 1,
+        "literal": 2,
+        "table": 1,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-7882d91008a27082",
+      "db": "game_injury",
+      "words": [
+        "causes",
+        "game",
+        "get",
+        "injured",
+        "is",
+        "of",
+        "player",
+        "samuel",
+        "season",
+        "the",
+        "to",
+        "walter",
+        "what",
+        "which"
+      ],
+      "masked": [
+        "causes",
+        "game",
+        "get",
+        "injured",
+        "is",
+        "literal",
+        "of",
+        "player",
+        "season",
+        "the",
+        "to",
+        "what",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-8877e969ccf7298a",
+      "db": "device",
+      "words": [
+        "a",
+        "are",
+        "device",
+        "have",
+        "in",
+        "kind",
+        "more",
+        "names",
+        "of",
+        "shops",
+        "single",
+        "stock",
+        "than",
+        "that",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "a",
+        "are",
+        "device",
+        "have",
+        "in",
+        "kind",
+        "more",
+        "names",
+        "of",
+        "shops",
+        "single",
+        "stock",
+        "than",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "gt": 1,
+        "count": 1,
+        "literal": 1,
+        "distinct": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-a0e4994d1ebbd730",
+      "db": "bike_1",
+      "words": [
+        "all",
+        "and",
+        "average",
+        "is",
+        "latitude",
+        "longitude",
+        "of",
+        "points",
+        "starting",
+        "the",
+        "trips",
+        "what"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "average",
+        "is",
+        "latitude",
+        "longitude",
+        "of",
+        "points",
+        "starting",
+        "the",
+        "trips",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "avg": 2,
+        "from": 1,
+        "where": 1,
+        "column": 3,
+        "table": 1,
+        "not": 1,
+        "is": 1,
+        "null": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-539be4f304e556bf",
+      "db": "insurance_policies",
+      "words": [
+        "and",
+        "customer",
+        "customers",
+        "details",
+        "find",
+        "for",
+        "had",
+        "id",
+        "more",
+        "one",
+        "policy",
+        "than",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "and",
+        "customer",
+        "customers",
+        "details",
+        "find",
+        "for",
+        "had",
+        "id",
+        "more",
+        "one",
+        "policy",
+        "than",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 1,
+        "and": 1,
+        "not": 1,
+        "neq": 1,
+        "is": 1,
+        "literal": 1,
+        "null": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-56a77660fb819e43",
+      "db": "entrepreneur",
+      "words": [
+        "amount",
+        "and",
+        "are",
+        "by",
+        "corresponding",
+        "descending",
+        "entrepreneurs",
+        "investors",
+        "money",
+        "names",
+        "of",
+        "ordered",
+        "requested",
+        "the",
+        "their",
+        "what"
+      ],
+      "masked": [
+        "amount",
+        "and",
+        "are",
+        "by",
+        "corresponding",
+        "descending",
+        "entrepreneurs",
+        "investors",
+        "money",
+        "names",
+        "of",
+        "ordered",
+        "requested",
+        "the",
+        "their",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "order": 1,
+        "table": 2,
+        "eq": 1,
+        "ordered": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-3002a73d4254f758",
+      "db": "hr_1",
+      "words": [
+        "all",
+        "and",
+        "are",
+        "countries",
+        "employee",
+        "ids",
+        "in",
+        "names",
+        "of",
+        "the",
+        "they",
+        "what",
+        "which",
+        "work"
+      ],
+      "masked": [
+        "all",
+        "and",
+        "are",
+        "countries",
+        "employee",
+        "ids",
+        "in",
+        "names",
+        "of",
+        "the",
+        "they",
+        "what",
+        "which",
+        "work"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-581e6a4d883a1eef",
+      "db": "customer_complaints",
+      "words": [
+        "by",
+        "complaints",
+        "customer",
+        "fewest",
+        "filed",
+        "had",
+        "has",
+        "have",
+        "names",
+        "of",
+        "products",
+        "return",
+        "that",
+        "the",
+        "who"
+      ],
+      "masked": [
+        "by",
+        "complaints",
+        "customer",
+        "fewest",
+        "filed",
+        "had",
+        "has",
+        "have",
+        "names",
+        "of",
+        "products",
+        "return",
+        "that",
+        "the",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 9,
+        "limit": 1,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "order": 1,
+        "literal": 5,
+        "table": 3,
+        "eq": 6,
+        "and": 2,
+        "ordered": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key",
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-0e496bf9efc1c931",
+      "db": "department_management",
+      "words": [
+        "acting",
+        "and",
+        "by",
+        "departments",
+        "employees",
+        "for",
+        "heads",
+        "is",
+        "managed",
+        "name",
+        "number",
+        "of",
+        "show",
+        "temporary",
+        "the",
+        "value",
+        "whose",
+        "yes"
+      ],
+      "masked": [
+        "acting",
+        "and",
+        "by",
+        "departments",
+        "employees",
+        "for",
+        "heads",
+        "is",
+        "literal",
+        "managed",
+        "name",
+        "number",
+        "of",
+        "show",
+        "temporary",
+        "the",
+        "value",
+        "whose"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f1e1cde7301124d4",
+      "db": "race_track",
+      "words": [
+        "and",
+        "date",
+        "each",
+        "for",
+        "its",
+        "name",
+        "race",
+        "show",
+        "the",
+        "track"
+      ],
+      "masked": [
+        "and",
+        "date",
+        "each",
+        "for",
+        "its",
+        "name",
+        "race",
+        "show",
+        "the",
+        "track"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-bb4b4044deef1c16",
+      "db": "machine_repair",
+      "words": [
+        "and",
+        "are",
+        "machine",
+        "names",
+        "of",
+        "repair",
+        "series",
+        "technicians",
+        "that",
+        "the",
+        "they",
+        "what"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "machine",
+        "names",
+        "of",
+        "repair",
+        "series",
+        "technicians",
+        "that",
+        "the",
+        "they",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 3,
+        "table": 4,
+        "eq": 3
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-63a2cd8822ffffe6",
+      "db": "local_govt_and_lot",
+      "words": [
+        "and",
+        "count",
+        "does",
+        "each",
+        "have",
+        "how",
+        "id",
+        "list",
+        "many",
+        "property",
+        "resident",
+        "residents"
+      ],
+      "masked": [
+        "and",
+        "count",
+        "does",
+        "each",
+        "have",
+        "how",
+        "id",
+        "list",
+        "many",
+        "property",
+        "resident",
+        "residents"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "join": 11,
+        "group": 1,
+        "count": 1,
+        "table": 12,
+        "boolean": 11
+      },
+      "error": "no such table",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-0364a71934f98011",
+      "db": "party_host",
+      "words": [
+        "for",
+        "give",
+        "have",
+        "host",
+        "hosts",
+        "me",
+        "more",
+        "names",
+        "parties",
+        "than",
+        "the",
+        "these",
+        "which"
+      ],
+      "masked": [
+        "for",
+        "give",
+        "have",
+        "host",
+        "hosts",
+        "literal",
+        "me",
+        "more",
+        "names",
+        "parties",
+        "than",
+        "the",
+        "these",
+        "which"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "and": 1,
+        "gt": 1,
+        "boolean": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "add_join",
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-6cfd83986b9abbd6",
+      "db": "flight_1",
+      "words": [
+        "a",
+        "at",
+        "employee",
+        "every",
+        "has",
+        "id",
+        "is",
+        "least",
+        "of",
+        "salary",
+        "the",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "a",
+        "at",
+        "employee",
+        "every",
+        "has",
+        "id",
+        "is",
+        "least",
+        "literal",
+        "of",
+        "salary",
+        "the",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "from": 1,
+        "where": 1,
+        "table": 1,
+        "gte": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "comparator"
+      ]
+    },
+    {
+      "id": "train-6df0b1b3ba1c615d",
+      "db": "flight_4",
+      "words": [
+        "airport",
+        "at",
+        "each",
+        "for",
+        "how",
+        "many",
+        "name",
+        "routes",
+        "start",
+        "that"
+      ],
+      "masked": [
+        "airport",
+        "at",
+        "each",
+        "for",
+        "how",
+        "many",
+        "name",
+        "routes",
+        "start",
+        "that"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 5,
+        "from": 1,
+        "join": 1,
+        "group": 1,
+        "count": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public mismatch",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-f65a353ba85a37d8",
+      "db": "phone_market",
+      "words": [
+        "and",
+        "are",
+        "districts",
+        "markets",
+        "names",
+        "of",
+        "on",
+        "phones",
+        "show",
+        "the",
+        "they"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "districts",
+        "markets",
+        "names",
+        "of",
+        "on",
+        "phones",
+        "show",
+        "the",
+        "they"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "table": 3,
+        "eq": 2
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-cab43443de66803a",
+      "db": "sakila_1",
+      "words": [
+        "a",
+        "and",
+        "april",
+        "burns",
+        "customer",
+        "film",
+        "first",
+        "full",
+        "has",
+        "is",
+        "last",
+        "member",
+        "name",
+        "of",
+        "rented",
+        "staff",
+        "the",
+        "to",
+        "what",
+        "who",
+        "with"
+      ],
+      "masked": [
+        "a",
+        "and",
+        "april",
+        "burns",
+        "customer",
+        "film",
+        "first",
+        "full",
+        "has",
+        "is",
+        "last",
+        "member",
+        "name",
+        "of",
+        "rented",
+        "staff",
+        "the",
+        "to",
+        "what",
+        "who",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 20,
+        "from": 1,
+        "join": 8,
+        "where": 1,
+        "table": 9,
+        "eq": 10,
+        "and": 1,
+        "literal": 2
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-653d8d6d7efce13e",
+      "db": "hospital_1",
+      "words": [
+        "an",
+        "appointment",
+        "are",
+        "made",
+        "names",
+        "of",
+        "patients",
+        "what",
+        "who"
+      ],
+      "masked": [
+        "an",
+        "appointment",
+        "are",
+        "made",
+        "names",
+        "of",
+        "patients",
+        "what",
+        "who"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 3,
+        "from": 1,
+        "join": 1,
+        "table": 2,
+        "eq": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-c391c1649fc5a0f7",
+      "db": "soccer_2",
+      "words": [
+        "at",
+        "most",
+        "popular",
+        "position",
+        "the",
+        "tryouts",
+        "was",
+        "what"
+      ],
+      "masked": [
+        "at",
+        "most",
+        "popular",
+        "position",
+        "the",
+        "tryouts",
+        "was",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 2,
+        "limit": 1,
+        "from": 1,
+        "order": 1,
+        "literal": 1,
+        "table": 1,
+        "ordered": 1
+      },
+      "error": "public match",
+      "edits": [
+        "frequency"
+      ]
+    },
+    {
+      "id": "train-35c758cd23d51deb",
+      "db": "college_1",
+      "words": [
+        "acct",
+        "class",
+        "enrolled",
+        "how",
+        "in",
+        "many",
+        "students"
+      ],
+      "masked": [
+        "acct",
+        "class",
+        "enrolled",
+        "how",
+        "in",
+        "literal",
+        "many",
+        "students"
+      ],
+      "shape": {
+        "select": 1,
+        "from": 1,
+        "where": 1,
+        "count": 1,
+        "table": 1,
+        "eq": 1,
+        "star": 1,
+        "column": 1,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "add_join"
+      ]
+    },
+    {
+      "id": "train-865681217053c817",
+      "db": "decoration_competition",
+      "words": [
+        "associated",
+        "canada",
+        "colleges",
+        "country",
+        "distinct",
+        "from",
+        "leader",
+        "members",
+        "names",
+        "of",
+        "show",
+        "the",
+        "with"
+      ],
+      "masked": [
+        "associated",
+        "colleges",
+        "country",
+        "distinct",
+        "from",
+        "leader",
+        "literal",
+        "members",
+        "names",
+        "of",
+        "show",
+        "the",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "distinct": 1,
+        "column": 4,
+        "from": 1,
+        "join": 1,
+        "where": 1,
+        "table": 2,
+        "eq": 2,
+        "literal": 1
+      },
+      "error": "public match",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-ac9bd498133599c7",
+      "db": "products_gen_characteristics",
+      "words": [
+        "are",
+        "categories",
+        "contain",
+        "descriptions",
+        "in",
+        "letter",
+        "of",
+        "product",
+        "products",
+        "t",
+        "that",
+        "the",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "are",
+        "categories",
+        "contain",
+        "descriptions",
+        "in",
+        "letter",
+        "of",
+        "product",
+        "products",
+        "t",
+        "that",
+        "the",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 2,
+        "like": 1,
+        "literal": 1
+      },
+      "error": "no such table",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-fe5f1350463bb4e6",
+      "db": "csu_1",
+      "words": [
+        "and",
+        "are",
+        "between",
+        "campuses",
+        "faculty",
+        "had",
+        "in",
+        "members",
+        "that",
+        "the",
+        "what"
+      ],
+      "masked": [
+        "and",
+        "are",
+        "between",
+        "campuses",
+        "faculty",
+        "had",
+        "in",
+        "literal",
+        "members",
+        "that",
+        "the",
+        "what"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 8,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 3,
+        "and": 2,
+        "lte": 1,
+        "gte": 1,
+        "literal": 3
+      },
+      "error": "ambiguous column name",
+      "edits": [
+        "join_key"
+      ]
+    },
+    {
+      "id": "train-1d94f9a8b43cd5b7",
+      "db": "browser_web",
+      "words": [
+        "accelerator",
+        "are",
+        "browswers",
+        "compatible",
+        "distinct",
+        "have",
+        "higher",
+        "market",
+        "names",
+        "share",
+        "than",
+        "that",
+        "the",
+        "what",
+        "with"
+      ],
+      "masked": [
+        "accelerator",
+        "are",
+        "browswers",
+        "compatible",
+        "distinct",
+        "have",
+        "higher",
+        "literal",
+        "market",
+        "names",
+        "share",
+        "than",
+        "that",
+        "the",
+        "what",
+        "with"
+      ],
+      "shape": {
+        "select": 1,
+        "column": 6,
+        "from": 1,
+        "join": 2,
+        "where": 1,
+        "table": 3,
+        "eq": 2,
+        "gt": 1,
+        "literal": 1
+      },
+      "error": "no such column",
+      "edits": [
+        "join_key"
+      ]
+    }
+  ]
+}

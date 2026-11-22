@@ -1,0 +1,19 @@
+{
+  "train_runtime": 1210.1723,
+  "train_samples_per_second": 3.292,
+  "train_steps_per_second": 0.412,
+  "total_flos": 8035010938404864.0,
+  "train_loss": 0.19167620324469864,
+  "epoch": 1.0,
+  "optimizer_steps": 498,
+  "actual_exposures": 3984,
+  "actual_tokens": {
+    "input": 2936656,
+    "target": 122392
+  },
+  "first_gradient": {
+    "finite_tensors": 112,
+    "nonzero_tensors": 56
+  },
+  "peak_GPU_allocated_bytes": 6800066048
+}

@@ -1,0 +1,25 @@
+{
+  "base_path": "models/hf/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+  "adapter_path": "outputs/coord198_gen_v2/round67_fixed_qv_delta_assets_static/q025_v075/adapter",
+  "adapter_SHA256": "09e900d89768709e35e2060f8706eb42ed7d60c7f8a05515e26602801342256e",
+  "base_weights_SHA256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+  "native_settings": {
+    "MP3_STEP63_ARM": "gpu_lab_v1_C4",
+    "MP3_STEP119_MODEL": "D",
+    "MP3_STEP119_BRIDGE": "on",
+    "MP3_STEP116_ARMS": "quantifier,temporal,aggregate",
+    "MP3_STEP120_ARMS": "negation,entity,category"
+  },
+  "runtime_versions": {
+    "torch": "2.12.1+cu126",
+    "transformers": "4.57.6",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "safetensors": "0.7.0",
+    "sqlglot": "27.29.0"
+  },
+  "public_manifest_SHA256": "bf7a517249ebe31b9cad8cbf5d6598fde98316d89f9aa1172cae3ad83289a6bc",
+  "adapter_config_SHA256": "fc1aac31b4139b53d3f40af9c8172133dc1b4b514c6dd2c647e30731f377c3ad",
+  "expected_total_parameters": 600637440,
+  "adapter_rank": 32
+}
